@@ -18,6 +18,7 @@ The engine will produce point-in-time data, tested signals, model evidence, quan
 - **Ready task:** [ML-G01-T01 - Vectorized Prediction](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md).
 - **Progress:** task 0%, phase 0%, overall 0%; see [PROGRESS.md](PROGRESS.md) for evidence and calculation.
 - **Code state:** the learner implementation has not started.
+- **First coding step:** two fictional companies, one feature, one hand calculation, then learner-written Python. Grow to the five-feature table only after the small version works.
 
 Open [00_CURRENT_CONTEXT.md](00_CURRENT_CONTEXT.md) before every session.
 

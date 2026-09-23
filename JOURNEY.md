@@ -11,6 +11,7 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-23 | Mentor Mode activated; learner reported C1W2 course completion. P00 tasks and progress weights defined. | None. |
 | 2026-09-23 | [Public repository](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research) created; knowledge graph and Git workflow prepared. | None. |
 | 2026-09-23 | [Baseline commit `d9d9db6`](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research/commit/d9d9db648c842648951a0f5c59c83b23778027e8) published and verified on `main`; the public tree contains docs and an empty learner starter file, but no course PDFs. | None. |
+| 2026-09-23 | Mentor pace and P00 difficulty ladder revised: short concept-to-Python steps, beginning with two rows and one feature. | None. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 

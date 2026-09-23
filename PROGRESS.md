@@ -73,10 +73,10 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 
 | T01 check | State | Evidence |
 |---|---|---|
-| Shapes and hand prediction | open | none |
-| Learner-written loop predictions | open | none |
-| Vectorized prediction agrees on original fixture | open | none |
-| Agreement holds after a changed input | open | none |
+| Two-row, one-feature shapes and hand predictions | open | none |
+| Learner-written loop on starter data | open | none |
+| Vectorized prediction agrees on starter data | open | none |
+| Two- and five-feature agreement plus changed input | open | none |
 | Shape failure and finance meaning explained | open | none |
 
 If T01 reaches 100%, P00 gains 15 percentage points and the overall project gains 1.5 percentage points (`10%` phase weight x `15%` task weight). Other tasks have their own weights and acceptance checks.
@@ -94,4 +94,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Complete ML-G01-T01 by producing learner-written loop and vectorized predictions, matching one hand calculation, passing a changed input, and diagnosing an incompatible-shape failure.
+Start ML-G01-T01 with two fictional companies and one feature. Earn the first runnable checkpoint, then extend to two and five features, a changed input, and an incompatible-shape failure. The learner writes every code line.

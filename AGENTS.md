@@ -13,6 +13,7 @@ This folder is the canonical home of the AI Capital Cycle Quantamental Research 
 
 - The learner writes, runs, explains, and defends every assignment-code line.
 - The mentor owns task design, guidance, execution checks, documentation, fixtures, and progress recording. Follow the help and solution boundary in `MENTOR_MODE.md`.
+- Apply the pace and difficulty ladder in `MENTOR_MODE.md`: concept, logic, Python representation, learner-written code, and a visible run. Start small, escalate help after a short stall, and grow difficulty from observed understanding.
 - Course coverage and demonstrated project capability are separate states. Use `PROGRESS.md` for task, phase, and overall completion.
 
 ## Research boundaries

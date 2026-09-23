@@ -33,7 +33,7 @@ A positive value means the observation is more expensive than this model predict
 
 | Task | State | Central difficulty |
 |---|---|---|
-| [ML-G01-T01](T01%20-%20Vectorized%20Prediction.md) | ready | map rows, features, weights, and bias into loop and vectorized predictions |
+| [ML-G01-T01](T01%20-%20Vectorized%20Prediction.md) | ready | start with two rows and one feature; grow to loop and vectorized five-feature predictions |
 | ML-G01-T02 | planned | implement and verify squared-error cost |
 | ML-G01-T03 | planned | implement gradients and batch gradient descent |
 | ML-G01-T04 | planned | implement feature scaling and explain its effect on convergence |
@@ -41,6 +41,8 @@ A positive value means the observation is more expensive than this model predict
 | ML-G01-T06 | planned | produce a research output and pass an independent transfer defense |
 
 The complete task path is in [PHASE_00_C1W2_PLAN.md](../../PHASE_00_C1W2_PLAN.md). Detailed briefs for T02-T06 will be finalized from observed work before each task begins.
+
+The tasks are a difficulty ladder, not six large assignments to solve at once. Each begins with a tiny hand example and a learner-written Python run, then adds one source of difficulty at a time. Partial checkpoints can be committed while the goal remains incomplete.
 
 ## Required artifacts
 

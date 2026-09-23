@@ -16,19 +16,23 @@ Build a complete multiple-linear-regression research kernel by hand and use it t
 
 The phase does not claim that the model predicts returns or proves a bubble.
 
+## Difficulty ladder
+
+Every task begins with one small hand calculation and a runnable Python step. The learner first explains what the values mean, then the logic, then writes the code. Each next checkpoint changes one thing at a time: more rows, more features, a new operation, or a stronger research check. The mentor keeps the pace brisk, gives a focused hint after repeated stalls, and records partial work without calling it mastery. See [Mentor Mode](MENTOR_MODE.md) for the pacing rule.
+
 ## Task sequence
 
 ### ML-G01-T01: Loop and vectorized prediction
 
-**Build:** prediction functions using explicit loops and `np.dot`.
+**Build:** write loop and `np.dot` predictions for two rows and one feature; add a second feature; then extend both versions to the six-row, five-feature teaching table.
 
 **Why:** connect the multiple-regression formula to array shapes and Python execution.
 
-**Output:** matching predictions on original and changed data plus a diagnosed shape failure.
+**Output:** small runnable checkpoints, matching predictions on original and changed data, and a diagnosed shape failure.
 
 ### ML-G01-T02: Cost function and residual meaning
 
-**Build:** squared-error cost from the formula and a residual table.
+**Build:** calculate two errors and their cost by hand; code the same operation; then apply it to the feature table and make a residual table.
 
 **Why:** understand exactly what the model minimizes and what an error means financially.
 
@@ -36,7 +40,7 @@ The phase does not claim that the model predicts returns or proves a bubble.
 
 ### ML-G01-T03: Gradients and batch gradient descent
 
-**Build:** parameter derivatives and simultaneous update logic.
+**Build:** trace one weight and bias update by hand, code it, then extend to multiple features and batch gradient descent.
 
 **Why:** understand how optimization changes every weight and bias rather than treating training as a library call.
 
@@ -44,7 +48,7 @@ The phase does not claim that the model predicts returns or proves a bubble.
 
 ### ML-G01-T04: Feature scaling and convergence
 
-**Build:** training-only mean normalization or z-score scaling, then compare convergence.
+**Build:** scale one feature by hand and in Python, then scale all features using training-only parameters and compare convergence.
 
 **Why:** show how feature scale changes the optimization path without changing the economic variable's meaning.
 
@@ -52,7 +56,7 @@ The phase does not claim that the model predicts returns or proves a bubble.
 
 ### ML-G01-T05: Feature engineering and nonlinear terms
 
-**Build:** one financially justified transformed or interaction feature and one polynomial experiment.
+**Build:** state one finance hypothesis, add one transformed or interaction feature, compare with baseline, then try one polynomial term if the first result is understood.
 
 **Why:** test whether the linear model can represent a plausible nonlinear financial relationship while controlling complexity.
 
@@ -60,7 +64,7 @@ The phase does not claim that the model predicts returns or proves a bubble.
 
 ### ML-G01-T06: Quantamental output and independent defense
 
-**Build:** a reproducible valuation-stretch research artifact from a fresh frozen fixture.
+**Build:** assemble the already-tested pieces into a reproducible valuation-stretch artifact from a fresh frozen fixture.
 
 **Why:** integrate Python, linear algebra, calculus, optimization, visualization, and finance interpretation without step-by-step rescue.
 

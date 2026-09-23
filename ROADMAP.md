@@ -4,6 +4,8 @@
 
 The project advances through evidence-backed phases. Future methods are visible here and may be taught early when a task needs them. Mentor Mode first explains the prerequisite, checks understanding, and then assigns a bounded implementation. Course completion stays separate from project evidence. Every task begins with what we are building, why it matters, and what output it will produce. Every task ends with execution, changed-input testing, failure diagnosis, explanation, and progress updates.
 
+**Learning sequence:** tiny synthetic calculation -> learner-written Python -> multi-feature model -> frozen real-world data -> tested signals -> AI evidence -> fragility research -> paper portfolio -> live paper research. Each phase starts with the smallest useful example and grows through working checkpoints. Professional depth is the end state, not the first exercise. [Mentor Mode](MENTOR_MODE.md) owns pace and help; [P00 plan](PHASE_00_C1W2_PLAN.md) owns the current difficulty ladder.
+
 ## P00: C1W2 first-principles valuation engine
 
 **Weight:** 10%. **State:** active. **Known course coverage:** C1W2 completed, learner-reported.

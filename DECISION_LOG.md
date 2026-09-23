@@ -4,6 +4,12 @@ This file records durable project choices and the reason behind them. New decisi
 
 ## 2026-09-23
 
+### Fast, progressive mentor pace
+
+**Decision:** teach concept, logic, and Python representation briefly, then let the learner write and run a small step. Begin P00 with two rows and one feature; add difficulty only after a working explanation and run. Escalate help after a short stall, and publish honest partial milestones.
+
+**Reason:** the project needs both pace and deep understanding. Depth will be built by revisiting ideas in harder settings rather than making the first exercise a full professional review.
+
 ### Public learning repository
 
 **Decision:** publish this project under the personal GitHub account `Shreyash3007`, with planning, code, session records, evidence, progress, and knowledge links in the same repository. Keep the course PDFs local and excluded from Git.

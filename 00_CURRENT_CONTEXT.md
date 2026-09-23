@@ -14,7 +14,7 @@ This is the compact resumption note for `D:\ML-project`. Start with [HOME.md](HO
 
 - Project: AI Capital Cycle Quantamental Research Engine.
 - Public repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research).
-- Publication state: documentation baseline `d9d9db6` verified on public `main`; no learner implementation evidence yet.
+- Publication state: documentation baseline published on public `main`; no learner implementation evidence yet.
 - Mentor Mode: active; follow [MENTOR_MODE.md](MENTOR_MODE.md).
 - Phase: P00, C1W2 first-principles valuation engine.
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
@@ -23,7 +23,7 @@ This is the compact resumption note for `D:\ML-project`. Start with [HOME.md](HO
 - Progress: task 0%, phase 0%, overall 0%; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
 - Course coverage: Machine Learning Specialization C1W2 completed, learner-reported. C1W3 has not been confirmed. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
-- Next action: run the task's short calibration, then make the learner's cold attempt in `Projects/AI Capital Cycle Quantamental Research Engine/src/01_vectorized_prediction.py`.
+- Next action: answer T01's two short starter questions, calculate the two one-feature predictions by hand, then write and run the first learner-owned Python step in `Projects/AI Capital Cycle Quantamental Research Engine/src/01_vectorized_prediction.py`. Add features only after that small step works.
 
 ## Current research target
 
