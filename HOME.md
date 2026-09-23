@@ -12,7 +12,7 @@ The engine will produce point-in-time data, tested signals, model evidence, quan
 
 - **Program:** long-term, spanning the full Machine Learning Specialization and later the Deep Learning Specialization.
 - **Mentor Mode:** active; you write, run, explain, and defend the assignment code.
-- **Course coverage:** C1W2 completed, learner-reported. Later methods may be introduced early with first-principles teaching; later course weeks are recorded complete only after your confirmation.
+- **Course coverage:** C1W1 and C1W2 completed, learner-reported. C1W3 is not yet confirmed. Later methods may be introduced early with first-principles teaching; later course weeks are recorded complete only after your confirmation.
 - **Current phase:** P00, the C1W2 valuation-stretch research kernel. The original seven-day target is a planning target, not a mastery claim.
 - **Active goal:** [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
 - **Ready task:** [ML-G01-T01 - Vectorized Prediction](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md).

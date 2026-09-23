@@ -89,7 +89,7 @@ The six-row T01 fixture is only for checking array mechanics. With five features
 
 ## Current boundary
 
-P00 is designed around confirmed C1W2 coverage. A later method may be introduced early under [Mentor Mode](MENTOR_MODE.md), but it does not replace the current from-scratch regression gate or imply that the later course week is complete.
+P00 uses learner-reported completion of C1W1 and C1W2. It starts with prediction, then explicitly implements C1W1 cost and gradient descent before the remaining C1W2 work. A later method may be introduced early under [Mentor Mode](MENTOR_MODE.md), but it does not replace the current from-scratch regression gate or imply that the later course week is complete.
 
 ## Phase progress
 

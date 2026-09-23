@@ -80,7 +80,7 @@ The first phase targets a narrow but deep research kernel using the full C1W2 bo
 
 The long-term charter remains ambitious. The first delivery remains honest.
 
-Mentor Mode and progress accounting live in [MENTOR_MODE.md](MENTOR_MODE.md) and [PROGRESS.md](PROGRESS.md). The learner reports completing C1W2, while project implementation remains at 0% until demonstrated.
+Mentor Mode and progress accounting live in [MENTOR_MODE.md](MENTOR_MODE.md) and [PROGRESS.md](PROGRESS.md). The learner reports completing C1W1 and C1W2, while project implementation remains at 0% until demonstrated.
 
 ## Final acceptance standard
 

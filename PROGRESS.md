@@ -6,7 +6,7 @@ Updated: 2026-09-23
 
 ```text
 Mentor Mode: ACTIVE
-Course coverage: MLS Course 1 Week 2 completed (learner-reported)
+Course coverage: MLS Course 1 Weeks 1 and 2 completed (learner-reported)
 Early later-course concepts: none introduced yet
 Next course week: C1W3 not yet confirmed
 Active phase: P00 - C1W2 first-principles valuation engine
@@ -30,7 +30,7 @@ The documentation system is established, but it does not count as demonstrated r
 
 | Course boundary | Coverage status | Project evidence | Use in project |
 |---|---|---|---|
-| C1W1 | learner-reported complete | cost and gradient descent not yet demonstrated here | available |
+| C1W1 | learner-reported complete | linear regression, cost, and gradient descent not yet demonstrated here | available in T01-T03 |
 | C1W2 | learner-reported complete | multiple regression and related methods not yet demonstrated here | current boundary |
 | C1W3 | not confirmed | none | may be taught early if needed |
 | Course 2 | not confirmed | none | may be taught early if needed |

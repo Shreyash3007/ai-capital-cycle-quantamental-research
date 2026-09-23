@@ -22,7 +22,7 @@ This is the compact resumption note for `D:\ML-project`. Start with [HOME.md](HO
 - Task state: ready; no learner attempt has been observed.
 - Progress: task 0%, phase 0%, overall 0%; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
-- Course coverage: Machine Learning Specialization C1W2 completed, learner-reported. C1W3 has not been confirmed. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
+- Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
 - Next action: answer T01's two short starter questions, calculate the two one-feature predictions by hand, then write and run the first learner-owned Python step in `Projects/AI Capital Cycle Quantamental Research Engine/src/01_vectorized_prediction.py`. Add features only after that small step works.
 
 ## Current research target

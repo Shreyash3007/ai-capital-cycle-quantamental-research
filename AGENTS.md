@@ -36,7 +36,7 @@ This folder is the canonical home of the AI Capital Cycle Quantamental Research 
 
 ## Current implementation boundary
 
-The learner reports completing Machine Learning Specialization Course 1 Week 2. C1W2 methods, including multiple features, vectorization, feature scaling, and feature engineering, are available. Later-course methods may be introduced when the project needs them: explain the prerequisite from first principles, use a bounded task, and check the learner's understanding and implementation. Do not mark a course week complete until the learner confirms it. NumPy may perform array operations; the learner implements the first model rather than using `scikit-learn` to train it.
+The learner reports completing Machine Learning Specialization Course 1 Weeks 1 and 2. C1W1 linear regression, cost, and gradient descent, plus C1W2 multiple features, vectorization, scaling, and feature engineering, are available. Later-course methods may be introduced when the project needs them: explain the prerequisite from first principles, use a bounded task, and check the learner's understanding and implementation. Do not mark a later course week complete until the learner confirms it. NumPy may perform array operations; the learner implements the first model rather than using `scikit-learn` to train it.
 
 ## Public record
 

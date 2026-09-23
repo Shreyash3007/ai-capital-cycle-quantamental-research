@@ -168,7 +168,7 @@ Percentages come from the weights in `PROGRESS.md`. Documentation and time spent
 
 ## Introducing later concepts
 
-- Confirmed course coverage is Machine Learning Specialization Course 1 Week 2.
+- Learner-reported completed course coverage is Machine Learning Specialization Course 1 Weeks 1 and 2. C1W3 is not yet confirmed.
 - A later-course method may be used early when it solves a defined research problem. The mentor first names the missing prerequisite, explains it plainly and mathematically, works a different example, and checks understanding before assigning implementation.
 - If the learner cannot yet explain or apply it, reduce the task to the smallest prerequisite or defer that method. Keep the research baseline working.
 - Mark the concept as `introduced early` in `KNOWLEDGE_GRAPH.md` and `PROGRESS.md`. Do not mark its course week completed or its project capability demonstrated without the required evidence.

@@ -38,7 +38,7 @@ Read the README in each directory before placing files there.
 - Outputs: none.
 - Tests: none.
 - Live services: none required.
-- Learner-reported course coverage: C1W2 complete; C1W3 not yet confirmed. Later concepts can be taught early under Mentor Mode without changing course status.
+- Learner-reported course coverage: C1W1 and C1W2 complete; C1W3 not yet confirmed. Later concepts can be taught early under Mentor Mode without changing course status.
 
 ## Long-term output contract
 

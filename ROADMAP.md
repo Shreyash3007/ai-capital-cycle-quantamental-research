@@ -8,7 +8,7 @@ The project advances through evidence-backed phases. Future methods are visible 
 
 ## P00: C1W2 first-principles valuation engine
 
-**Weight:** 10%. **State:** active. **Known course coverage:** C1W2 completed, learner-reported.
+**Weight:** 10%. **State:** active. **Known course coverage:** C1W1 and C1W2 completed, learner-reported.
 
 Build prediction, cost, gradients, batch gradient descent, feature scaling, convergence diagnostics, feature engineering, and a limited valuation-stretch output from scratch.
 

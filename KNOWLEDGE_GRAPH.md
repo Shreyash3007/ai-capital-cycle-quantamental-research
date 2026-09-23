@@ -54,7 +54,7 @@ Course completion in this diagram is learner-reported coverage. Every current ta
 
 | Starting node | Edge | Destination | Current state |
 |---|---|---|---|
-| [C1W2 concept set](Knowledge/INDEX.md) | `practised_in` | [P00 goal](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md) | ready, no implementation evidence |
+| [C1W1-C1W2 concept set](Knowledge/INDEX.md) | `practised_in` | [P00 goal](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md) | ready, no implementation evidence |
 | [P00 goal](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md) | `produces` | [valuation-stretch research output](RESEARCH_OUTPUTS.md) | planned |
 | [Valuation stretch](Knowledge/K008_Valuation_Stretch.md) | `extends_to` | [expectations gap and bubble dimensions](BUBBLE_MONITOR.md) | planned |
 | [Finance model](FINANCE_RESEARCH_MODEL.md) | `requires` | [point-in-time data](DATA_AND_LIVE_SYSTEM.md) | planned |

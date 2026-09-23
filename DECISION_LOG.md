@@ -24,7 +24,7 @@ This file records durable project choices and the reason behind them. New decisi
 
 ### Mentor Mode and course boundary
 
-**Decision:** Mentor Mode is active. The learner reports completing the whole of C1W2. Later methods may be introduced early with first-principles teaching and independent checks; their course weeks are marked complete only when the learner confirms them. The mentor designs tasks and gives graduated help while the learner writes, runs, explains, and defends assignment code.
+**Decision:** Mentor Mode is active. The learner reports completing C1W1 and C1W2; C1W3 is not yet confirmed. Later methods may be introduced early with first-principles teaching and independent checks; their course weeks are marked complete only when the learner confirms them. The mentor designs tasks and gives graduated help while the learner writes, runs, explains, and defends assignment code.
 
 **Reason:** course coverage should unlock practice, while project mastery must come from observed independent evidence. Task, phase, and overall completion are tracked in `PROGRESS.md`.
 
