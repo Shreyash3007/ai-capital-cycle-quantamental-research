@@ -14,7 +14,7 @@ The public repository should make the learning process inspectable. It should sh
 - The project plans and infrastructure documents were mentor-assisted. Learner code is labeled and remains learner-authored.
 - The ten course PDFs remain local under `MLS Slides/` and are excluded from Git. Public notes can cite their topics but do not redistribute the files.
 
-The public repository was created on 2026-09-23. A public commit is verified separately after pushing.
+The public repository was created on 2026-09-23. The [baseline commit `d9d9db6`](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research/commit/d9d9db648c842648951a0f5c59c83b23778027e8) was pushed to `main`; the local and remote hashes matched. This establishes the documentation baseline, not a demonstrated model.
 
 ## Milestone commit cycle
 

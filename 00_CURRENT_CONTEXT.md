@@ -14,6 +14,7 @@ This is the compact resumption note for `D:\ML-project`. Start with [HOME.md](HO
 
 - Project: AI Capital Cycle Quantamental Research Engine.
 - Public repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research).
+- Publication state: documentation baseline `d9d9db6` verified on public `main`; no learner implementation evidence yet.
 - Mentor Mode: active; follow [MENTOR_MODE.md](MENTOR_MODE.md).
 - Phase: P00, C1W2 first-principles valuation engine.
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
