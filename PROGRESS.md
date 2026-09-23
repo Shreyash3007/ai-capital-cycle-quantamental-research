@@ -24,7 +24,9 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The documentation system is established, but it does not count as demonstrated research capability. The learner's two starter hand predictions were correct; shapes and Python implementation are still open, so no T01 check has passed yet.
+The documentation system is established, but it does not count as demonstrated research capability. The learner's two starter hand predictions and `X` shape were correct; `w` and output shapes plus Python implementation are still open, so no T01 check has passed yet.
+
+The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
 ## Curriculum progress
 
@@ -73,7 +75,7 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 
 | T01 check | State | Evidence |
 |---|---|---|
-| Two-row, one-feature shapes and hand predictions | open: shapes pending | [correct hand predictions](Journey/2026-09-23-ML-G01-T01.md) |
+| Two-row, one-feature shapes and hand predictions | open: `w` and output shapes pending | [correct hand predictions and `X` shape](Journey/2026-09-23-ML-G01-T01.md) |
 | Learner-written loop on starter data | open | none |
 | Vectorized prediction agrees on starter data | open | none |
 | Two- and five-feature agreement plus changed input | open | none |

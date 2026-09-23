@@ -6,6 +6,8 @@ The project advances through evidence-backed phases. Future methods are visible 
 
 **Learning sequence:** tiny synthetic calculation -> learner-written Python -> multi-feature model -> frozen real-world data -> tested signals -> AI evidence -> fragility research -> paper portfolio -> live paper research. Each phase starts with the smallest useful example and grows through working checkpoints. Professional depth is the end state, not the first exercise. [Mentor Mode](MENTOR_MODE.md) owns pace and help; [P00 plan](PHASE_00_C1W2_PLAN.md) owns the current difficulty ladder.
 
+Software engineering grows alongside this sequence: explain the current folders and Python execution in P00, learn SQL with frozen real data in P01, strengthen modules and tests in P02-P03, handle external APIs in P04, serve research outputs in P06, and build an evidence-linked analyst interface with a system design defense in P07. [ENGINEERING_LEARNING_PATH.md](ENGINEERING_LEARNING_PATH.md) gives the ordered checkpoints and stack decision gates. These are part of the research build, not a separate dashboard project.
+
 ## P00: C1W2 first-principles valuation engine
 
 **Weight:** 10%. **State:** active. **Known course coverage:** C1W1 and C1W2 completed, learner-reported.
@@ -25,8 +27,8 @@ Build the accounting and data layer. The mentor writes each detailed brief when 
 | Task | Build | Output |
 |---|---|---|
 | P01-T01 | Versioned company universe and segment rules | membership file with inclusion evidence and dates |
-| P01-T02 | Frozen SEC filing and company-facts loader | immutable snapshot plus source manifest |
-| P01-T03 | Accounting normalization and filing availability | reconciled company-quarter records |
+| P01-T02 | Frozen SEC filing and company-facts loader | immutable snapshot plus source manifest and first local SQL load |
+| P01-T03 | Accounting normalization and filing availability | reconciled company-quarter records with keyed, point-in-time SQL checks |
 | P01-T04 | Fundamental features with unit and missingness checks | point-in-time feature table |
 | P01-T05 | Independent source-to-feature audit | data-quality report and defended sample rows |
 
@@ -126,9 +128,10 @@ Operate and defend the full loop:
 | P07-T02 | Scheduled validation, features, inference, and reports | repeatable research run with failure recovery |
 | P07-T03 | Live paper portfolio and monitoring | dated positions, attribution, staleness, and drift alerts |
 | P07-T04 | Company and segment research publication | reproducible dossiers with counter-theses |
-| P07-T05 | Final technical paper and professional defense | source-to-signal reproduction and oral review record |
+| P07-T05 | Evidence-linked analyst workbench | tested read-only API and small browser workflow for signal, source, counter-thesis, and paper consequence |
+| P07-T06 | Final technical paper and professional defense | source-to-signal reproduction, system design tradeoffs, and oral review record |
 
-**Output:** a reproducible live paper-research record and defensible final body of work.
+**Output:** a reproducible live paper-research record, a focused full-stack review workflow, and a defensible final body of work.
 
 ## Progress accounting
 

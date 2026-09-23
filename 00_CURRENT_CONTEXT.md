@@ -23,7 +23,7 @@ This is the compact resumption note for `D:\ML-project`. Start with [HOME.md](HO
 - Progress: task 0%, phase 0%, overall 0%; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
 - Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
-- Next action: the learner's hand predictions `1.4` and `1.8` are correct. Ask for the shapes of the two-row, one-feature `X`, `w`, and prediction vector; then have the learner write and run the first Python step in `Projects/AI Capital Cycle Quantamental Research Engine/src/01_vectorized_prediction.py`. Add features only after that small step works.
+- Next action: the learner's hand predictions `1.4` and `1.8` and `X.shape == (2, 1)` are correct. Ask only for the shapes of `w` and the prediction vector and why they align; then have the learner write and run the first Python step in `Projects/AI Capital Cycle Quantamental Research Engine/src/01_vectorized_prediction.py`. Add features only after that small step works.
 
 ## Current research target
 
@@ -38,6 +38,8 @@ The first feature set is intentionally small:
 - research-and-development intensity.
 
 The first dataset is synthetic and frozen. It exists to expose the mathematics and Python behavior without API, accounting, or revision noise.
+
+The cross-phase [software engineering path](ENGINEERING_LEARNING_PATH.md) now includes folder roles and Python execution in P00, SQL in P01, APIs later, and an analyst workbench and system design defense in P07. Teach each layer when the active research task needs it; T01 does not need a database or server.
 
 ## P00 required outputs
 

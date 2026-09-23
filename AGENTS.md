@@ -7,6 +7,7 @@ This folder is the canonical home of the AI Capital Cycle Quantamental Research 
 1. Read `HOME.md`, then `00_CURRENT_CONTEXT.md` and `PROGRESS.md`.
 2. For any learning, coding, review, or explanation session, follow `MENTOR_MODE.md`; Mentor Mode is active.
 3. Read the active goal and task before changing code. Read `PHASE_00_C1W2_PLAN.md` for the current task sequence.
+4. For folder structure, SQL, backend, frontend, or system design lessons, follow `ENGINEERING_LEARNING_PATH.md` and teach only the layer needed by the active phase.
 4. Use the relevant design document linked from `HOME.md`; keep each rule in its canonical file.
 
 ## Learning ownership

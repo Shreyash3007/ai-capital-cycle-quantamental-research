@@ -22,6 +22,7 @@ Course coverage and project demonstration are independent. The exact current tas
 | K006 | [Feature scaling](K006_Feature_Scaling.md) | C1W2 covered | none | T04-T06 |
 | K007 | [Feature engineering](K007_Feature_Engineering.md) | C1W2 covered | none | T05-T06 |
 | K008 | [Valuation stretch](K008_Valuation_Stretch.md) | project finance concept | none | T02, T06 |
+| K009 | [Project structure](K009_Project_Structure.md) | software engineering learning path | none | P00 and later phases |
 
 The task IDs and sequence are in [PHASE_00_C1W2_PLAN.md](../PHASE_00_C1W2_PLAN.md). Detailed task briefs are written as each task becomes active; [T01](../Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md) is ready.
 
@@ -37,5 +38,6 @@ The task IDs and sequence are in [PHASE_00_C1W2_PLAN.md](../PHASE_00_C1W2_PLAN.m
 | Bubble, catalysts, and fragility | [Bubble monitor](../BUBBLE_MONITOR.md) | planned |
 | Portfolio construction and risk | [Signal program](../SIGNAL_RESEARCH_PROGRAM.md) and [roadmap P06](../ROADMAP.md) | planned |
 | Live research operations | [Architecture](../ARCHITECTURE.md) and [roadmap P07](../ROADMAP.md) | planned |
+| SQL, backend, frontend, and system design | [Engineering learning path](../ENGINEERING_LEARNING_PATH.md) | planned |
 
 Create a detailed concept node when that concept is introduced or assigned. Link it back here, to its task, and to the resulting evidence. Do not fill future nodes with claims of mastery.

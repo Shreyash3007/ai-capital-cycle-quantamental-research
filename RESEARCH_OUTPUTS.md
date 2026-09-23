@@ -105,4 +105,4 @@ No important conclusion may depend only on color or visual impression.
 
 ## Optional inspection tools
 
-A command-line report generator or lightweight research viewer may be added after the output contracts are stable. It must read existing artifacts rather than own research logic. A web dashboard is neither required nor prioritized.
+A command-line report generator comes before delivery tooling. In P07, a small analyst workbench will read versioned artifacts through a tested API so reviewers can inspect a conclusion, source, counter-thesis, and paper consequence. It must not own research calculations. A generic web dashboard is neither required nor prioritized. See [the engineering path](ENGINEERING_LEARNING_PATH.md).

@@ -55,6 +55,8 @@ Course completion in this diagram is learner-reported coverage. Every current ta
 | Starting node | Edge | Destination | Current state |
 |---|---|---|---|
 | [C1W1-C1W2 concept set](Knowledge/INDEX.md) | `practised_in` | [P00 goal](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md) | ready, no implementation evidence |
+| [Project structure](Knowledge/K009_Project_Structure.md) | `practised_in` | [P00 scripts and checks](PHASE_00_C1W2_PLAN.md) | planned, no structure explanation observed |
+| [Engineering path](ENGINEERING_LEARNING_PATH.md) | `extends_to` | [P01 SQL and P07 analyst workbench](ROADMAP.md) | planned, no full-stack evidence |
 | [P00 goal](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md) | `produces` | [valuation-stretch research output](RESEARCH_OUTPUTS.md) | planned |
 | [Valuation stretch](Knowledge/K008_Valuation_Stretch.md) | `extends_to` | [expectations gap and bubble dimensions](BUBBLE_MONITOR.md) | planned |
 | [Finance model](FINANCE_RESEARCH_MODEL.md) | `requires` | [point-in-time data](DATA_AND_LIVE_SYSTEM.md) | planned |
@@ -78,6 +80,19 @@ flowchart LR
 ```
 
 The sequence and every planned task are defined in [ROADMAP.md](ROADMAP.md). A later-course concept can be taught early under [MENTOR_MODE.md](MENTOR_MODE.md); its course week remains unconfirmed until the learner says it is complete.
+
+Software engineering grows through [folder roles](Knowledge/K009_Project_Structure.md), [the engineering path](ENGINEERING_LEARNING_PATH.md), and the phase tasks in [ROADMAP.md](ROADMAP.md): Python execution -> SQL and data contracts -> APIs -> analyst interface and system design. These are planned links until the learner writes, runs, and explains the relevant code.
+
+```mermaid
+flowchart LR
+  FS[Folder roles P00] --> PY[Python scripts and tests P00-P03]
+  PY --> SQL[SQL and data contracts P01-P02]
+  SQL --> EXT[External API clients P04]
+  EXT --> ART[Versioned research artifacts P05]
+  ART --> API[Read-only research API P06]
+  API --> UI[Analyst workbench P07]
+  UI --> SD[System design defense P07]
+```
 
 ## Update contract
 

@@ -16,6 +16,7 @@ The goal is not merely to finish code. The goal is to build knowledge that can b
 - Spend time on an idea when evidence shows a real gap, not merely because it is in the syllabus. After two unproductive attempts or about ten minutes stuck, move one level up the help ladder or reduce the task to a smaller runnable piece.
 - End each work block with a visible result: a calculation checked by hand, a Python run, a plot, a test, or a recorded failure and next fix. Commit meaningful milestones; do not wait for an entire phase to ship.
 - Depth comes from revisiting the same idea in harder settings, changed inputs, failure cases, finance interpretation, and later transfer. Do not front-load the full professional standard into the first exercise.
+- Teach software structure at the point of use. When a folder, function, test, SQL table, API, or UI layer first matters, explain why it exists, what enters and leaves it, and one tradeoff; then let the learner write and run the relevant task code. Follow [the engineering path](ENGINEERING_LEARNING_PATH.md) without interrupting the current ML checkpoint for future-stack lectures.
 
 ## Session opening
 
@@ -34,6 +35,7 @@ The mentor then asks one short retrieval or prediction question before code begi
 The learner:
 
 - writes every assignment-code line by hand;
+- writes learning-owned SQL, backend, and frontend task code by hand when those layers arrive;
 - predicts behavior before running code;
 - explains variables, shapes, units, formulas, and financial meaning;
 - reads tracebacks and forms a hypothesis before changing code;

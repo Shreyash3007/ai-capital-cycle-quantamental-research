@@ -4,6 +4,12 @@ This file records durable project choices and the reason behind them. New decisi
 
 ## 2026-09-23
 
+### Software engineering alongside research
+
+**Decision:** teach folder roles and Python execution in P00, SQL with frozen real data in P01, code and data contracts through P02-P05, a read-only research API in P06, and an evidence-linked analyst workbench plus system design defense in P07. The learner writes the learning-owned code at each layer.
+
+**Reason:** the finished research engine should demonstrate full-stack and system design skill, but adding a database or web app during the first prediction exercise would slow the learning without improving it. The research artifacts remain the product; the interface exists to inspect them.
+
 ### Fast, progressive mentor pace
 
 **Decision:** teach concept, logic, and Python representation briefly, then let the learner write and run a small step. Begin P00 with two rows and one feature; add difficulty only after a working explanation and run. Escalate help after a short stall, and publish honest partial milestones.

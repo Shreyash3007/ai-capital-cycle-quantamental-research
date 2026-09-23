@@ -20,6 +20,8 @@ The phase does not claim that the model predicts returns or proves a bubble.
 
 Every task begins with one small hand calculation and a runnable Python step. The learner first explains what the values mean, then the logic, then writes the code. Each next checkpoint changes one thing at a time: more rows, more features, a new operation, or a stronger research check. The mentor keeps the pace brisk, gives a focused hint after repeated stalls, and records partial work without calling it mastery. See [Mentor Mode](MENTOR_MODE.md) for the pacing rule.
 
+P00 also introduces the software structure in [the engineering path](ENGINEERING_LEARNING_PATH.md): what belongs in `src`, `data`, `outputs`, and `tests`, how a script runs, and when a function or module is worth extracting. This is taught alongside the learner's actual code, not as a separate setup project. SQL and web services wait for later phases.
+
 ## Task sequence
 
 ### ML-G01-T01: Loop and vectorized prediction
@@ -66,7 +68,7 @@ Every task begins with one small hand calculation and a runnable Python step. Th
 
 **Build:** assemble the already-tested pieces into a reproducible valuation-stretch artifact from a fresh frozen fixture.
 
-**Why:** integrate Python, linear algebra, calculus, optimization, visualization, and finance interpretation without step-by-step rescue.
+**Why:** integrate Python, linear algebra, calculus, optimization, visualization, finance interpretation, and a reproducible script/output structure without step-by-step rescue.
 
 **Output:** signal table, diagnostic figures, short research note, failure analysis, and oral or written defense.
 

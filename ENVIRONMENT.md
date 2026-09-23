@@ -2,7 +2,7 @@
 
 ## Current local baseline
 
-The initial environment has been observed with:
+The current script environment was checked on 2026-09-23:
 
 - Windows and PowerShell;
 - Python 3.14.5;
@@ -23,7 +23,9 @@ python .\src\01_vectorized_prediction.py
 
 No Docker, database, web server, TypeSafe API, or background service is needed for ML-G01.
 
-The standalone Git repository was initialized on 2026-09-22. No baseline commit has been created.
+The standalone Git repository was initialized on 2026-09-22 and has a public `main` branch. The current learner script remains empty; documentation and session checkpoints are not code evidence.
+
+The later stack is staged in [ENGINEERING_LEARNING_PATH.md](ENGINEERING_LEARNING_PATH.md). SQLite enters with frozen real data; a backend and browser interface enter only after versioned research outputs exist. No related service is required for T01; service health was not checked because no service will be used.
 
 ## Dependency policy
 
@@ -48,7 +50,7 @@ The standalone Git repository was initialized on 2026-09-22. No baseline commit 
 | static plots | Matplotlib can save and reopen a PNG |
 | live data | provider credential, rate-limit, schema, and snapshot-write checks |
 | TypeSafe/Jev | SDK/API authentication plus a recorded low-risk test request |
-| optional research viewer | local server health plus browser rendering checks |
+| P07 analyst workbench | local API health, browser rendering, and evidence-link checks |
 | scheduled paper system | scheduler, snapshot, inference, and alert health checks |
 
 Heavy runtimes should be started only when a real stage requires them.

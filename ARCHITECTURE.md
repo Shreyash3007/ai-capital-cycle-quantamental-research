@@ -18,6 +18,7 @@ source adapters
     -> bubble/fragility scenarios
     -> paper portfolio and monitoring
     -> evidence-linked research artifacts and paper attribution
+    -> read-only research API and analyst workbench
 ```
 
 ## Modules
@@ -64,7 +65,11 @@ Evaluates hypothetical decisions, costs, turnover, exposure, drawdown, and drift
 
 ### 11. Research artifact publisher
 
-Writes versioned signal tables, model cards, company dossiers, segment reports, event studies, fragility reports, and paper-portfolio attribution. Each important claim links to its source and calculation. Optional viewing tools consume these artifacts and never own research logic.
+Writes versioned signal tables, model cards, company dossiers, segment reports, event studies, fragility reports, and paper-portfolio attribution. Each important claim links to its source and calculation.
+
+### 12. Research delivery
+
+A later read-only API serves versioned artifacts to a small analyst workbench. The interface lets a reviewer trace a signal to its data, model, counter-evidence, and paper consequence. It does not calculate a signal or replace the saved research artifact. The learner builds and tests this layer in P06-P07 after the research contracts exist.
 
 ## Current Stage 0 architecture
 
@@ -78,6 +83,8 @@ small frozen NumPy fixture
 ```
 
 The learner will initially keep this in a small number of numbered scripts so every line is visible. Modules will be extracted only after repetition reveals a real shared responsibility.
+
+The staged software structure and full-stack learning path are in [ENGINEERING_LEARNING_PATH.md](ENGINEERING_LEARNING_PATH.md). No database, API, or frontend belongs in T01.
 
 ## Stable interfaces to aim for later
 

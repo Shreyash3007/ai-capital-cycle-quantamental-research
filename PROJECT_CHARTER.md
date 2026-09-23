@@ -97,4 +97,5 @@ The long-term platform is portfolio-ready only when it includes:
 - model cards, data documentation, evaluation reports, and failure postmortems;
 - machine-readable signal and attribution products;
 - professional company, segment, model, event, fragility, and portfolio reports;
-- optional inspection tooling that never owns the research logic.
+- a small evidence-linked analyst workbench, backed by a tested API, that never owns the research logic;
+- a system design defense covering data lineage, reliability, failure recovery, and tradeoffs.

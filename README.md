@@ -24,6 +24,7 @@ The intended outputs are point-in-time datasets, tested signals, company and seg
 | [JOURNEY.md](JOURNEY.md) | dated decisions, attempts, runs, and learning history |
 | [KNOWLEDGE_GRAPH.md](KNOWLEDGE_GRAPH.md) | links among concepts, tasks, outputs, and evidence |
 | [ROADMAP.md](ROADMAP.md) | all eight phases and their planned tasks |
+| [ENGINEERING_LEARNING_PATH.md](ENGINEERING_LEARNING_PATH.md) | staged Python, SQL, API, frontend, and system design learning |
 | [MENTOR_MODE.md](MENTOR_MODE.md) | how guidance, explanations, debugging, and learner ownership work |
 | [GIT_WORKFLOW.md](GIT_WORKFLOW.md) | how milestones become reviewed public commits |
 

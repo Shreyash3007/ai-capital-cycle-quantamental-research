@@ -30,6 +30,8 @@ The active build is the C1W2 valuation-stretch foundation. Start with:
 
 Read the README in each directory before placing files there.
 
+The folders separate code, inputs, generated results, and checks so a result can be reproduced. `src` is a convention, not a Python requirement. [The engineering path](../../ENGINEERING_LEARNING_PATH.md) explains what the learner will build and learn at each stage; no SQL database or web app is needed for T01.
+
 ## Current state
 
 - Documentation: established.
@@ -42,7 +44,7 @@ Read the README in each directory before placing files there.
 
 ## Long-term output contract
 
-The project exists to produce point-in-time datasets, promoted or rejected signal research, model cards, company and segment dossiers, event studies, bubble and fragility analysis, and paper-portfolio attribution. A dashboard is not a completion requirement.
+The project exists to produce point-in-time datasets, promoted or rejected signal research, model cards, company and segment dossiers, event studies, bubble and fragility analysis, and paper-portfolio attribution. A focused analyst workbench will later expose their evidence chain; a generic dashboard is not the outcome.
 
 ## Run convention
 

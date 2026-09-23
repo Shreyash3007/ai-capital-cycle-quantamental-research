@@ -12,7 +12,8 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-23 | [Public repository](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research) created; knowledge graph and Git workflow prepared. | None. |
 | 2026-09-23 | [Baseline commit `d9d9db6`](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research/commit/d9d9db648c842648951a0f5c59c83b23778027e8) published and verified on `main`; the public tree contains docs and an empty learner starter file, but no course PDFs. | None. |
 | 2026-09-23 | Mentor pace and P00 difficulty ladder revised: short concept-to-Python steps, beginning with two rows and one feature. | None. |
-| 2026-09-23 | [T01 hand-calculation checkpoint](Journey/2026-09-23-ML-G01-T01.md): both starter predictions correct; shapes and code remain open. | Hand calculation only. |
+| 2026-09-23 | [T01 starter checkpoint](Journey/2026-09-23-ML-G01-T01.md): both hand predictions and `X` shape correct; `w`, output shape, and code remain open. | Hand calculation and one shape only. |
+| 2026-09-23 | [Software engineering path](ENGINEERING_LEARNING_PATH.md) added across P00-P07: folder roles, Python structure, SQL, APIs, analyst interface, and system design. | Planned; no engineering implementation evidence. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 

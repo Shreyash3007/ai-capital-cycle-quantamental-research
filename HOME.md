@@ -38,6 +38,7 @@ Open [00_CURRENT_CONTEXT.md](00_CURRENT_CONTEXT.md) before every session.
 | How will I write every line and receive guidance? | [MENTOR_MODE.md](MENTOR_MODE.md) |
 | How are task, phase, and project completion measured? | [PROGRESS.md](PROGRESS.md) |
 | How does the project grow with the courses? | [ROADMAP.md](ROADMAP.md) |
+| When do I learn folders, Python structure, SQL, APIs, frontend, and system design? | [ENGINEERING_LEARNING_PATH.md](ENGINEERING_LEARNING_PATH.md) |
 | What are the modules and data flow? | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | How do static, historical, and live data work? | [DATA_AND_LIVE_SYSTEM.md](DATA_AND_LIVE_SYSTEM.md) |
 | What do the first features, target, units, and shapes mean? | [DATA_DICTIONARY.md](DATA_DICTIONARY.md) |
