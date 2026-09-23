@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The documentation system is established, but it does not count as demonstrated research capability. No learner implementation attempt has yet been observed in ML-G01.
+The documentation system is established, but it does not count as demonstrated research capability. The learner's two starter hand predictions were correct; shapes and Python implementation are still open, so no T01 check has passed yet.
 
 ## Curriculum progress
 
@@ -73,7 +73,7 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 
 | T01 check | State | Evidence |
 |---|---|---|
-| Two-row, one-feature shapes and hand predictions | open | none |
+| Two-row, one-feature shapes and hand predictions | open: shapes pending | [correct hand predictions](Journey/2026-09-23-ML-G01-T01.md) |
 | Learner-written loop on starter data | open | none |
 | Vectorized prediction agrees on starter data | open | none |
 | Two- and five-feature agreement plus changed input | open | none |

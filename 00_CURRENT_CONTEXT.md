@@ -19,11 +19,11 @@ This is the compact resumption note for `D:\ML-project`. Start with [HOME.md](HO
 - Phase: P00, C1W2 first-principles valuation engine.
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
 - Task: [ML-G01-T01 - Vectorized Prediction](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md).
-- Task state: ready; no learner attempt has been observed.
+- Task state: ready for Python; [first hand-calculation checkpoint](Journey/2026-09-23-ML-G01-T01.md) recorded, but no learner code attempt has been observed.
 - Progress: task 0%, phase 0%, overall 0%; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
 - Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
-- Next action: answer T01's two short starter questions, calculate the two one-feature predictions by hand, then write and run the first learner-owned Python step in `Projects/AI Capital Cycle Quantamental Research Engine/src/01_vectorized_prediction.py`. Add features only after that small step works.
+- Next action: the learner's hand predictions `1.4` and `1.8` are correct. Ask for the shapes of the two-row, one-feature `X`, `w`, and prediction vector; then have the learner write and run the first Python step in `Projects/AI Capital Cycle Quantamental Research Engine/src/01_vectorized_prediction.py`. Add features only after that small step works.
 
 ## Current research target
 

@@ -12,6 +12,7 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-23 | [Public repository](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research) created; knowledge graph and Git workflow prepared. | None. |
 | 2026-09-23 | [Baseline commit `d9d9db6`](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research/commit/d9d9db648c842648951a0f5c59c83b23778027e8) published and verified on `main`; the public tree contains docs and an empty learner starter file, but no course PDFs. | None. |
 | 2026-09-23 | Mentor pace and P00 difficulty ladder revised: short concept-to-Python steps, beginning with two rows and one feature. | None. |
+| 2026-09-23 | [T01 hand-calculation checkpoint](Journey/2026-09-23-ML-G01-T01.md): both starter predictions correct; shapes and code remain open. | Hand calculation only. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 
@@ -20,7 +21,7 @@ The setup documents were prepared with mentor assistance. They are project plann
 - [Progress ledger](PROGRESS.md): T01 0%, P00 0%, overall 0%.
 - [Current context](00_CURRENT_CONTEXT.md): T01 ready.
 - [Knowledge graph](KNOWLEDGE_GRAPH.md): current concepts and planned extensions.
-- [Session records](Journey/README.md): no implementation session logged yet.
+- [Session records](Journey/README.md): first hand-calculation checkpoint saved; no Python implementation session yet.
 - [Evidence index](Evidence/README.md): no project implementation evidence yet.
 
 ## How a session enters this record
