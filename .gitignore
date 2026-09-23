@@ -1,0 +1,38 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+__MACOSX/
+._*
+
+# Course slides are local study material; do not redistribute in a public repository
+MLS Slides/
+
+# Raw or provider-derived data
+Projects/AI Capital Cycle Quantamental Research Engine/data/raw/
+Projects/AI Capital Cycle Quantamental Research Engine/data/normalized/
+Projects/AI Capital Cycle Quantamental Research Engine/data/features/
+
+# Generated research artifacts; keep directory documentation
+Projects/AI Capital Cycle Quantamental Research Engine/outputs/*
+!Projects/AI Capital Cycle Quantamental Research Engine/outputs/README.md
+
+# Notebooks and local scratch work
+.ipynb_checkpoints/
+scratch/
+tmp/
