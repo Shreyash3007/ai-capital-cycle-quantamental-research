@@ -1,6 +1,6 @@
 # Project progress
 
-Updated: 2026-09-23
+Updated: 2026-09-24
 
 ## Current position
 
@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The documentation system is established, but it does not count as demonstrated research capability. The learner's two starter hand predictions and `X` shape were correct; `w` and output shapes plus Python implementation are still open, so no T01 check has passed yet.
+The documentation system is established, but it does not count as demonstrated research capability. The learner's two starter hand predictions and all three shapes were correct. The dimension-matching explanation and Python implementation are still open, so no T01 check has passed yet.
 
 The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
@@ -75,7 +75,7 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 
 | T01 check | State | Evidence |
 |---|---|---|
-| Two-row, one-feature shapes and hand predictions | open: `w` and output shapes pending | [correct hand predictions and `X` shape](Journey/2026-09-23-ML-G01-T01.md) |
+| Two-row, one-feature shapes and hand predictions | open: dimension-matching explanation pending | [hand predictions and `X` shape](Journey/2026-09-23-ML-G01-T01.md); [remaining shapes](Journey/2026-09-24-ML-G01-T01.md) |
 | Learner-written loop on starter data | open | none |
 | Vectorized prediction agrees on starter data | open | none |
 | Two- and five-feature agreement plus changed input | open | none |
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Start ML-G01-T01 with two fictional companies and one feature. Earn the first runnable checkpoint, then extend to two and five features, a changed input, and an incompatible-shape failure. The learner writes every code line.
+Write and run the first learner-authored Python step for two fictional companies and one feature, and explain why the feature and weight counts match. Then extend to vectorization, two and five features, a changed input, and an incompatible-shape failure. The learner writes every code line.

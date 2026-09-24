@@ -9,12 +9,12 @@ This is the one document to read and work from. It grows as you build the projec
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
 | Active task | ML-G01-T01: prediction, first with one feature and two fictional companies |
-| Correct so far | Hand predictions `1.4` and `1.8`; input matrix `X.shape == (2, 1)` |
-| Still to answer | Shape of the weight array `w`, shape of the predictions, and why the dimensions fit |
+| Correct so far | Hand predictions `1.4` and `1.8`; `X.shape == (2, 1)`, `w.shape == (1,)`, and prediction shape `(2,)` |
+| Still to explain | Why the one feature in each row pairs with the one weight |
 | Code | The learner's Python file is empty; no run has been observed |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; the first check is partial |
 
-![T01 learning flow, showing completed hand calculations and the current shape question](Visuals/current_lesson_flow.png)
+![T01 learning flow, showing correct shapes and the next Python run](Visuals/current_lesson_flow.png)
 
 The picture is a rendered PNG, not a Mermaid code block. The table above gives the same state if an image viewer is unavailable.
 
@@ -74,7 +74,7 @@ Use these rules to reason, not to memorize an answer:
 
 Different example: suppose three companies each have **two** features. The input table has shape `(3, 2)`. There are two weights, so a one-dimensional weight array has shape `(2,)`. One output per company gives a prediction array of shape `(3,)`. The inner dimensions match: each two-feature row pairs with two weights.
 
-**Your current check:** apply that reasoning to the two-company, one-feature exercise. State `w.shape`, the prediction array's shape, and why the feature count and weight count must agree. The manual does not fill in this active answer for you.
+**Your current check:** you answered `w.shape == (1,)` and prediction shape `(2,)` correctly. In your own words, explain why one feature column and one weight fit together. Then test the shapes in Python.
 
 ## 4. The Python ideas you will use
 
@@ -106,7 +106,7 @@ These are building blocks, not a finished solution. You decide the variable name
 | Step | What you do | Evidence | State |
 |---|---|---|---|
 | 1 | Calculate the two outputs by hand. | `1.4` and `1.8` | Done |
-| 2 | Explain the input, weight, and output shapes. | Correct sizes and one sentence on matching dimensions | In progress; `X` done |
+| 2 | Explain the input, weight, and output shapes. | Correct sizes and one sentence on matching dimensions | In progress; sizes correct, explanation pending |
 | 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | Not started |
 | 4 | Write the vectorized NumPy form. | Show that both versions agree | Not started |
 | 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Later |
@@ -130,9 +130,9 @@ Before each first run, say what you expect to see. After the run, compare the ac
 
 Today's picture shows the task path, not model performance. When you reach gradient descent, you will plot cost against training steps to see whether learning is converging. Later you will plot actual against predicted values and the residuals, which are the differences between them. Each plot must come from your executed code and have an explanation of what it does and does not show.
 
-## Next answer
+## Next action
 
-For `X.shape == (2, 1)`, what are `w.shape` and the prediction array's shape? Why do those sizes fit? After that, we move to your first Python run.
+Write the smallest working version yourself in the empty Python file: create the two revenue-growth inputs, one trial weight, and bias; print the input and weight shapes; then use a loop to print one prediction per company. Predict the output before you run it. Show the run output and explain in one sentence why each one-feature row can pair with the one weight.
 
 ## How this manual is maintained
 
