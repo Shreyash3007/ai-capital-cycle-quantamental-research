@@ -23,7 +23,7 @@ After each meaningful task or research milestone:
 1. Run the learner's code and inspect the outputs together.
 2. Save a dated [session note](Journey/SESSION_TEMPLATE.md) with the exact command, failures, corrections, and assistance.
 3. Add an [evidence record](Evidence/EVIDENCE_TEMPLATE.md) only for checks actually demonstrated.
-4. Update [PROGRESS.md](PROGRESS.md), the affected [knowledge nodes](Knowledge/INDEX.md), and [KNOWLEDGE_GRAPH.md](KNOWLEDGE_GRAPH.md).
+4. Update [PROGRESS.md](PROGRESS.md), affected [knowledge nodes](Knowledge/INDEX.md), and [KNOWLEDGE_GRAPH.md](KNOWLEDGE_GRAPH.md). Refresh [START_HERE.md](START_HERE.md) when the learner's next step changes.
 5. Review the staged file list for slides, secrets, private data, generated bulk outputs, and unrelated work.
 6. Commit the coherent milestone, then push to the public remote.
 7. Verify the remote commit and public README after pushing.

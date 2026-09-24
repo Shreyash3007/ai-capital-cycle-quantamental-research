@@ -2,6 +2,14 @@
 
 This file records durable project choices and the reason behind them. New decisions should be dated and should state what evidence could cause reconsideration.
 
+## 2026-09-24
+
+### One learner reading desk
+
+**Decision:** use `START_HERE.md` as the learner's single go-to page for today's reading order, current step, visual flow, and next action. Keep detailed task instructions, progress calculations, and observed evidence in their existing canonical files, linked from the desk.
+
+**Reason:** the project has many necessary research documents, but the learner should not have to search them before each small coding step. A short maintained entry point preserves pace without hiding the deeper material.
+
 ## 2026-09-23
 
 ### Software engineering alongside research

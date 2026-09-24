@@ -6,6 +6,8 @@ Repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https://github
 
 The intended outputs are point-in-time datasets, tested signals, company and segment research, bubble and fragility analysis, and a live **paper** portfolio with attribution. The learner writes and explains every assignment-code line. Planning documents and task infrastructure are mentor-assisted and are not presented as proof of implementation skill.
 
+For the current reading order and next action, open [START_HERE.md](START_HERE.md).
+
 ## Current state
 
 - Course coverage reported by the learner: Machine Learning Specialization C1W1 and C1W2.
@@ -19,6 +21,7 @@ The intended outputs are point-in-time datasets, tested signals, company and seg
 
 | Read | Purpose |
 |---|---|
+| [START_HERE.md](START_HERE.md) | the learner's current reading and action page |
 | [HOME.md](HOME.md) | project map and current position |
 | [PROGRESS.md](PROGRESS.md) | task, phase, and overall completion from observed checks |
 | [JOURNEY.md](JOURNEY.md) | dated decisions, attempts, runs, and learning history |
