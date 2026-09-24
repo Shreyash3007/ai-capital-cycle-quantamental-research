@@ -30,7 +30,7 @@ Every working session begins with five short items:
 
 The mentor then asks one short retrieval or prediction question before code begins. Start coding promptly when the answer shows readiness.
 
-Link the learner to [START_HERE.md](START_HERE.md) for the current reading and action. Keep that page short; the task brief and evidence records hold the details.
+Link the learner to [LEARNING_MANUAL.md](LEARNING_MANUAL.md) for the complete current lesson: concept, finance meaning, math, Python, engineering context, visual flow, and action in order. The task brief and evidence records remain separate for the mentor's audit; the learner need not jump among them to work.
 
 ## Learner ownership
 
@@ -61,7 +61,7 @@ The mentor:
 - records help, evidence, progress, and remaining gaps honestly;
 - saves a dated session note and updates the knowledge graph after meaningful work;
 - commits and pushes reviewed milestones under `GIT_WORKFLOW.md` so the public record remains current;
-- refreshes the learner-facing `START_HERE.md` after the active step changes;
+- refreshes the learner-facing `LEARNING_MANUAL.md` and its rendered diagram after the active step changes;
 - updates `00_CURRENT_CONTEXT.md` last after meaningful work.
 
 ## Help ladder

@@ -6,9 +6,17 @@ This file records durable project choices and the reason behind them. New decisi
 
 ### One learner reading desk
 
-**Decision:** use `START_HERE.md` as the learner's single go-to page for today's reading order, current step, visual flow, and next action. Keep detailed task instructions, progress calculations, and observed evidence in their existing canonical files, linked from the desk.
+**Status:** superseded by the integrated manual decision below.
+
+**Decision at the time:** use `START_HERE.md` as a navigation page for today's reading order, current step, visual flow, and next action.
 
 **Reason:** the project has many necessary research documents, but the learner should not have to search them before each small coding step. A short maintained entry point preserves pace without hiding the deeper material.
+
+### One cumulative learning manual
+
+**Decision:** replace the link-heavy navigation page with `LEARNING_MANUAL.md`, a self-contained and cumulative lesson book. Each active lesson teaches its ML, finance, math, Python, and software-engineering concepts in the order needed to perform the task. Use rendered PNGs for the current flow and knowledge overview because the learner's viewer displayed Mermaid as text.
+
+**Reason:** the learner should be able to understand and do the current work without moving among documents or relying on a Mermaid-capable viewer. Separate task and evidence files remain for audit, not required reading.
 
 ## 2026-09-23
 

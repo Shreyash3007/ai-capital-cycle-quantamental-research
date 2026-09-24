@@ -6,7 +6,7 @@ Repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https://github
 
 The intended outputs are point-in-time datasets, tested signals, company and segment research, bubble and fragility analysis, and a live **paper** portfolio with attribution. The learner writes and explains every assignment-code line. Planning documents and task infrastructure are mentor-assisted and are not presented as proof of implementation skill.
 
-For the current reading order and next action, open [START_HERE.md](START_HERE.md).
+For the current lesson, concepts, visual flow, and next action, open [LEARNING_MANUAL.md](LEARNING_MANUAL.md). It is self-contained for the active task.
 
 ## Current state
 
@@ -21,7 +21,7 @@ For the current reading order and next action, open [START_HERE.md](START_HERE.m
 
 | Read | Purpose |
 |---|---|
-| [START_HERE.md](START_HERE.md) | the learner's current reading and action page |
+| [LEARNING_MANUAL.md](LEARNING_MANUAL.md) | the learner's integrated lesson and action page |
 | [HOME.md](HOME.md) | project map and current position |
 | [PROGRESS.md](PROGRESS.md) | task, phase, and overall completion from observed checks |
 | [JOURNEY.md](JOURNEY.md) | dated decisions, attempts, runs, and learning history |

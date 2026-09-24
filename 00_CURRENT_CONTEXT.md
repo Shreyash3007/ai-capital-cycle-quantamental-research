@@ -8,7 +8,7 @@ active_task: ML-G01-T01
 
 # Current ML context
 
-This is the compact mentor resumption note for `D:\ML-project`. The learner starts at [START_HERE.md](START_HERE.md); the mentor checks this note, [PROGRESS.md](PROGRESS.md), and the active task.
+This is the compact mentor resumption note for `D:\ML-project`. The learner works from the self-contained [LEARNING_MANUAL.md](LEARNING_MANUAL.md); the mentor checks this note, [PROGRESS.md](PROGRESS.md), and the active task.
 
 ## Active position
 
@@ -20,7 +20,7 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner star
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
 - Task: [ML-G01-T01 - Vectorized Prediction](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md).
 - Task state: ready for Python; [first hand-calculation checkpoint](Journey/2026-09-23-ML-G01-T01.md) recorded, but no learner code attempt has been observed.
-- Learner reading and next-action page: [START_HERE.md](START_HERE.md). Keep its current step aligned with this note and the progress ledger.
+- Learner lesson and next-action page: [LEARNING_MANUAL.md](LEARNING_MANUAL.md). Keep its current step and diagram aligned with this note and the progress ledger.
 - Progress: task 0%, phase 0%, overall 0%; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
 - Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.

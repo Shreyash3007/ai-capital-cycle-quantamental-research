@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img" aria-labelledby="title desc">
+  <title id="title">Course, research, and engineering knowledge paths</title>
+  <desc id="desc">C1W1 prediction, cost, and gradient descent; C1W2 multiple features, vectorization, scaling, and feature engineering; research phases P00 through P07; engineering from Python scripts through SQL, APIs, and an analyst workbench.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#82909c"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="650" fill="#f7f9fb"/>
+  <text x="40" y="48" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1f2d3a">How the knowledge grows</text>
+  <text x="40" y="77" font-family="Arial, sans-serif" font-size="18" fill="#52606d">Course topics are covered; project skills need learner-written, tested evidence.</text>
+
+  <rect x="35" y="100" width="1030" height="205" rx="6" fill="#fff" stroke="#d2dbe3"/>
+  <text x="55" y="130" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#1f2d3a">Course concepts used in P00</text>
+  <text x="55" y="173" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#397958">C1W1</text>
+  <rect x="155" y="148" width="225" height="42" rx="5" fill="#e9f4ed" stroke="#82b394"/>
+  <text x="267" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">Prediction</text>
+  <path d="M 385 169 L 411 169" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="420" y="148" width="225" height="42" rx="5" fill="#e9f4ed" stroke="#82b394"/>
+  <text x="532" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">Cost function</text>
+  <path d="M 650 169 L 676 169" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="685" y="148" width="330" height="42" rx="5" fill="#e9f4ed" stroke="#82b394"/>
+  <text x="850" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">Gradient descent</text>
+
+  <text x="55" y="257" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#2f6b86">C1W2</text>
+  <rect x="155" y="232" width="190" height="42" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="250" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">Multiple features</text>
+  <path d="M 350 253 L 375 253" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="385" y="232" width="190" height="42" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="480" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">Vectorization</text>
+  <path d="M 580 253 L 605 253" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="615" y="232" width="170" height="42" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="700" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">Scaling</text>
+  <path d="M 790 253 L 815 253" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="825" y="232" width="190" height="42" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="920" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">Feature design</text>
+
+  <rect x="35" y="325" width="1030" height="137" rx="6" fill="#fff" stroke="#d2dbe3"/>
+  <text x="55" y="357" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#1f2d3a">Research phases</text>
+  <rect x="55" y="379" width="112" height="48" rx="5" fill="#fff3dd" stroke="#d59b39" stroke-width="2"/>
+  <text x="111" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2d3a">P00 NOW</text>
+  <path d="M 173 403 L 192 403" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="200" y="379" width="112" height="48" rx="5" fill="#f2f5f7" stroke="#c5cdd5"/>
+  <text x="256" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">P01 Data</text>
+  <path d="M 318 403 L 337 403" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="345" y="379" width="112" height="48" rx="5" fill="#f2f5f7" stroke="#c5cdd5"/>
+  <text x="401" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">P02 Market</text>
+  <path d="M 463 403 L 482 403" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="490" y="379" width="145" height="48" rx="5" fill="#f2f5f7" stroke="#c5cdd5"/>
+  <text x="562" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">P03 / P04 ML+AI</text>
+  <path d="M 641 403 L 660 403" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="668" y="379" width="112" height="48" rx="5" fill="#f2f5f7" stroke="#c5cdd5"/>
+  <text x="724" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">P05 Risk</text>
+  <path d="M 786 403 L 805 403" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="813" y="379" width="112" height="48" rx="5" fill="#f2f5f7" stroke="#c5cdd5"/>
+  <text x="869" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">P06 Book</text>
+  <path d="M 931 403 L 950 403" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="958" y="379" width="88" height="48" rx="5" fill="#f2f5f7" stroke="#c5cdd5"/>
+  <text x="1002" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f2d3a">P07</text>
+
+  <rect x="35" y="482" width="1030" height="130" rx="6" fill="#fff" stroke="#d2dbe3"/>
+  <text x="55" y="514" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#1f2d3a">Engineering grows with the research</text>
+  <rect x="55" y="536" width="173" height="44" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="141" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">Python scripts</text>
+  <path d="M 234 558 L 258 558" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="268" y="536" width="173" height="44" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="354" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">SQL and data</text>
+  <path d="M 447 558 L 471 558" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="481" y="536" width="173" height="44" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="567" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">External APIs</text>
+  <path d="M 660 558 L 684 558" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="694" y="536" width="165" height="44" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="776" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">Research API</text>
+  <path d="M 865 558 L 889 558" stroke="#82909c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="899" y="536" width="147" height="44" rx="5" fill="#eaf3f8" stroke="#8bb7cc"/>
+  <text x="972" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#1f2d3a">Review UI</text>
+
+  <text x="40" y="635" font-family="Arial, sans-serif" font-size="16" fill="#52606d">Planned paths are not proof of completed implementation.</text>
+</svg>

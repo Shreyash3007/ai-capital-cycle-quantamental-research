@@ -13,6 +13,7 @@ updated: 2026-09-23
 
 The active build is the C1W2 valuation-stretch foundation. Start with:
 
+- [Integrated learner lesson](../../LEARNING_MANUAL.md)
 - [Current context](../../00_CURRENT_CONTEXT.md)
 - [Active goal](../../Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md)
 - [Ready task](../../Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md)

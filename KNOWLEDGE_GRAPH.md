@@ -16,39 +16,23 @@ Open [Knowledge/INDEX.md](Knowledge/INDEX.md) for the current concept nodes. Ope
 | `evidenced_by` | A claim is supported by an observed run, explanation, or review. |
 | `extends_to` | A current capability becomes a later research capability. |
 
+## Visual overview
+
+![Course, research, and engineering learning paths](Visuals/knowledge_overview.png)
+
+The image is a simplified learning order, rendered as a PNG so it displays without Mermaid support. The tables below preserve the exact task and phase relationships. Course coverage is learner-reported; every current task remains at 0% until its checks pass.
+
 ## Current concept chain
 
-```mermaid
-flowchart LR
-  W1[Course 1 Week 1 covered]
-  W2[Course 1 Week 2 covered]
-  LR[Linear regression]
-  CF[Cost function]
-  GD[Gradient descent]
-  MF[Multiple features]
-  V[Vectorization]
-  SC[Feature scaling]
-  FE[Feature engineering]
-  T01[T01 prediction]
-  T02[T02 cost]
-  T03[T03 training]
-  T04[T04 scaling]
-  T05[T05 engineering]
-  T06[T06 research defense]
-  VS[Valuation stretch]
-  W1 --> LR --> CF --> GD
-  W2 --> MF --> V --> SC --> FE
-  MF --> T01
-  V --> T01
-  CF --> T02
-  GD --> T03
-  SC --> T04
-  FE --> T05
-  T01 --> T02 --> T03 --> T04 --> T05 --> T06
-  T06 --> VS
-```
-
-Course completion in this diagram is learner-reported coverage. Every current task remains at 0% until its checks pass.
+| Course concept | Practised in |
+|---|---|
+| C1W1 linear regression | T01 prediction and later P00 tasks |
+| C1W1 cost function | T02 and later P00 tasks |
+| C1W1 gradient descent | T03 and later P00 tasks |
+| C1W2 multiple features and vectorization | T01, then later P00 tasks |
+| C1W2 feature scaling | T04 and later P00 tasks |
+| C1W2 feature engineering | T05 and T06 |
+| Integrated valuation-stretch interpretation | T06, after T01-T05 checks |
 
 ## Research chain
 
@@ -67,32 +51,21 @@ Course completion in this diagram is learner-reported coverage. Every current ta
 
 ## Phase graph
 
-```mermaid
-flowchart LR
-  P00[P00 first-principles model] --> P01[P01 point-in-time finance data]
-  P01 --> P02[P02 market and econometrics]
-  P02 --> P03[P03 supervised ML signals]
-  P01 --> P04[P04 AI evidence and deep learning]
-  P03 --> P05[P05 bubble and fragility]
-  P04 --> P05
-  P05 --> P06[P06 portfolio and signal book]
-  P06 --> P07[P07 live paper research and defense]
-```
+| Phase | Needed before it starts |
+|---|---|
+| P01 point-in-time finance data | P00 first-principles model |
+| P02 market and econometrics | P01 data foundation |
+| P03 supervised ML signals | P02 market research |
+| P04 AI evidence and deep learning | P01 data foundation; may advance alongside P02-P03 |
+| P05 bubble and fragility | P03 and P04 evidence |
+| P06 portfolio and signal book | P05 research and a promoted signal |
+| P07 live paper research and defense | P06 paper system and operational readiness |
 
 The sequence and every planned task are defined in [ROADMAP.md](ROADMAP.md). A later-course concept can be taught early under [MENTOR_MODE.md](MENTOR_MODE.md); its course week remains unconfirmed until the learner says it is complete.
 
 Software engineering grows through [folder roles](Knowledge/K009_Project_Structure.md), [the engineering path](ENGINEERING_LEARNING_PATH.md), and the phase tasks in [ROADMAP.md](ROADMAP.md): Python execution -> SQL and data contracts -> APIs -> analyst interface and system design. These are planned links until the learner writes, runs, and explains the relevant code.
 
-```mermaid
-flowchart LR
-  FS[Folder roles P00] --> PY[Python scripts and tests P00-P03]
-  PY --> SQL[SQL and data contracts P01-P02]
-  SQL --> EXT[External API clients P04]
-  EXT --> ART[Versioned research artifacts P05]
-  ART --> API[Read-only research API P06]
-  API --> UI[Analyst workbench P07]
-  UI --> SD[System design defense P07]
-```
+The engineering order in the image is a learning path, not a claim that every layer must wait for the previous phase to finish. P00 keeps only the script and checks needed now; the later layers receive their own evidence gates.
 
 ## Update contract
 

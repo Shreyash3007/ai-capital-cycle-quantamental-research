@@ -8,7 +8,9 @@ This folder is the canonical home of the AI Capital Cycle Quantamental Research 
 2. For any learning, coding, review, or explanation session, follow `MENTOR_MODE.md`; Mentor Mode is active.
 3. Read the active goal and task before changing code. Read `PHASE_00_C1W2_PLAN.md` for the current task sequence.
 4. For folder structure, SQL, backend, frontend, or system design lessons, follow `ENGINEERING_LEARNING_PATH.md` and teach only the layer needed by the active phase.
-5. For a learner session, use `START_HERE.md` as the single reading and next-action page. Refresh its current step after observed checkpoints, then refresh `00_CURRENT_CONTEXT.md` last.
+5. For a learner session, use `LEARNING_MANUAL.md` as the self-contained learning and doing page. Keep its lessons cumulative, its current step and rendered diagram accurate, and its assignment solutions learner-owned. Refresh `00_CURRENT_CONTEXT.md` last.
+
+`Visuals/*.svg` are editable diagram sources; Markdown embeds their PNG renders. When a diagram changes, run `magick -background white -density 150 Visuals/<name>.svg -resize <width>x<height> Visuals/<name>.png`, inspect the PNG, and commit source and render together. Use rendered images and tables in learner-facing Markdown so the diagrams work without Mermaid support.
 4. Use the relevant design document linked from `HOME.md`; keep each rule in its canonical file.
 
 ## Learning ownership
@@ -49,4 +51,4 @@ The learner reports completing Machine Learning Specialization Course 1 Weeks 1 
 
 ## Completion standard
 
-A task is complete only when the checks in `MENTOR_MODE.md` and its task brief pass. Update `PROGRESS.md` from observed evidence, refresh `START_HERE.md`, then refresh `00_CURRENT_CONTEXT.md` last.
+A task is complete only when the checks in `MENTOR_MODE.md` and its task brief pass. Update `PROGRESS.md` from observed evidence, refresh `LEARNING_MANUAL.md` and its current diagram, then refresh `00_CURRENT_CONTEXT.md` last.

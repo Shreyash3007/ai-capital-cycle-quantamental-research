@@ -6,7 +6,7 @@ Public repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https:/
 
 > Across the public AI capital cycle, where is durable economic value being created, what expectations are already embedded in prices, and which companies or segments are vulnerable if operational delivery, financing conditions, or market narratives change?
 
-**Learner entry point:** [START_HERE.md](START_HERE.md). It gives the current reading order, action, and visual checkpoint. This page is the wider project map.
+**Learner entry point:** [LEARNING_MANUAL.md](LEARNING_MANUAL.md). It contains the active lesson, concepts, visual checkpoint, and action in one place. This page is the wider project map.
 
 The engine will produce point-in-time data, tested signals, model evidence, quantamental research reports, event studies, fragility scenarios, and a walk-forward paper portfolio. It will not be judged by a dashboard or a casual yes-or-no bubble verdict.
 
@@ -22,7 +22,7 @@ The engine will produce point-in-time data, tested signals, model evidence, quan
 - **Code state:** the learner implementation has not started.
 - **First coding step:** two fictional companies, one feature, one hand calculation, then learner-written Python. Grow to the five-feature table only after the small version works.
 
-Open [START_HERE.md](START_HERE.md) before a learner session. The mentor also checks [00_CURRENT_CONTEXT.md](00_CURRENT_CONTEXT.md) for the exact saved handoff.
+Open [LEARNING_MANUAL.md](LEARNING_MANUAL.md) before a learner session. The mentor also checks [00_CURRENT_CONTEXT.md](00_CURRENT_CONTEXT.md) for the exact saved handoff.
 
 ## Documentation map
 
