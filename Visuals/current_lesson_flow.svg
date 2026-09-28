@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
   <title id="title">Current T01 learning flow</title>
-  <desc id="desc">Hand predictions and all shapes are correct. The learner still needs to explain why the dimensions align, then write and run Python, vectorize, and check changed inputs.</desc>
+  <desc id="desc">Hand predictions and shapes were answered. The learner wrote and ran loop and vectorized two-feature predictions. The current step is explaining agreement and generalizing the loop before five-feature and changed-input checks.</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
       <path d="M 0 0 L 12 6 L 0 12 z" fill="#8a96a3"/>
@@ -31,25 +31,25 @@
   <rect x="70" y="315" width="760" height="75" rx="6" fill="#fff3dd" stroke="#d59b39" stroke-width="3"/>
   <circle cx="108" cy="352" r="21" fill="#a96b12"/>
   <text x="108" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">3</text>
-  <text x="150" y="352" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Shapes correct; explain alignment</text>
-  <text x="770" y="360" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#a96b12">NOW</text>
+  <text x="150" y="352" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Two-feature loop runs: 1.76, 2.14</text>
+  <text x="770" y="360" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#a96b12">RUN</text>
 
   <rect x="70" y="415" width="760" height="75" rx="6" fill="#fff" stroke="#c5cdd5" stroke-width="2"/>
   <circle cx="108" cy="452" r="21" fill="#6f7e8b"/>
   <text x="108" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">4</text>
-  <text x="150" y="452" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Write and run a Python loop</text>
-  <text x="770" y="460" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">NEXT</text>
+  <text x="150" y="452" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Vectorized result agrees: True</text>
+  <text x="770" y="460" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">RUN</text>
 
   <rect x="70" y="515" width="760" height="75" rx="6" fill="#fff" stroke="#c5cdd5" stroke-width="2"/>
   <circle cx="108" cy="552" r="21" fill="#6f7e8b"/>
   <text x="108" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">5</text>
-  <text x="150" y="552" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Vectorize and compare outputs</text>
-  <text x="770" y="560" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">LATER</text>
+  <text x="150" y="552" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Explain agreement; generalize loop</text>
+  <text x="770" y="560" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">NEXT</text>
 
   <rect x="70" y="615" width="760" height="75" rx="6" fill="#fff" stroke="#c5cdd5" stroke-width="2"/>
   <circle cx="108" cy="652" r="21" fill="#6f7e8b"/>
   <text x="108" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">6</text>
-  <text x="150" y="652" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Change input and diagnose a failure</text>
+  <text x="150" y="652" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Five features, changed input, failure</text>
   <text x="770" y="660" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">LATER</text>
 
   <text x="70" y="732" font-family="Arial, sans-serif" font-size="17" fill="#52606d">Progress stays at 0% until a complete acceptance check is demonstrated.</text>

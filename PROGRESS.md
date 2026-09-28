@@ -1,6 +1,6 @@
 # Project progress
 
-Updated: 2026-09-24
+Updated: 2026-09-28
 
 ## Current position
 
@@ -12,8 +12,8 @@ Next course week: C1W3 not yet confirmed
 Active phase: P00 - C1W2 first-principles valuation engine
 Active goal: ML-G01
 Active task: ML-G01-T01 - Vectorized prediction
-Task state: READY
-Evidence state: PLANNED
+Task state: IN PROGRESS
+Evidence state: EXECUTED, EXPLANATION PENDING
 ```
 
 ## Progress summary
@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The documentation system is established, but it does not count as demonstrated research capability. The learner's two starter hand predictions and all three shapes were correct. The dimension-matching explanation and Python implementation are still open, so no T01 check has passed yet.
+The learner wrote a two-feature loop and vectorized prediction in the task file. On 2026-09-28 the script ran and printed `[1.76 2.14]` from both paths and `True` from `np.allclose`. The earlier one-feature runs were shown in dialogue, but the saved file now contains the two-feature version. Dimension matching, numerical-comparison meaning, and transfer to a general loop remain to be explained, so no complete T01 check has been credited yet.
 
 The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
@@ -61,7 +61,7 @@ Overall completion is the sum of each phase weight multiplied by its evidence-ba
 
 | Task | Weight inside P00 | State | Completion | Evidence |
 |---|---:|---|---:|---|
-| ML-G01-T01 - Loop and vectorized prediction | 15% | ready | 0% | planned |
+| ML-G01-T01 - Loop and vectorized prediction | 15% | in progress | 0% | [two-feature run; explanation pending](Journey/2026-09-28-ML-G01-T01.md) |
 | ML-G01-T02 - Cost function and residual meaning | 15% | planned | 0% | planned |
 | ML-G01-T03 - Gradients and batch gradient descent | 20% | planned | 0% | planned |
 | ML-G01-T04 - Feature scaling and convergence | 15% | planned | 0% | planned |
@@ -76,9 +76,9 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 | T01 check | State | Evidence |
 |---|---|---|
 | Two-row, one-feature shapes and hand predictions | open: dimension-matching explanation pending | [hand predictions and `X` shape](Journey/2026-09-23-ML-G01-T01.md); [remaining shapes](Journey/2026-09-24-ML-G01-T01.md) |
-| Learner-written loop on starter data | open | none |
-| Vectorized prediction agrees on starter data | open | none |
-| Two- and five-feature agreement plus changed input | open | none |
+| Learner-written loop on starter data | open: starter result shown in dialogue; explanation and durable run record pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
+| Vectorized prediction agrees on starter data | open: starter agreement shown in dialogue; comparison meaning pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
+| Two- and five-feature agreement plus changed input | open: two-feature agreement observed; five-feature and changed-input runs pending | [verified two-feature run](Journey/2026-09-28-ML-G01-T01.md) |
 | Shape failure and finance meaning explained | open | none |
 
 If T01 reaches 100%, P00 gains 15 percentage points and the overall project gains 1.5 percentage points (`10%` phase weight x `15%` task weight). Other tasks have their own weights and acceptance checks.
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Write and run the first learner-authored Python step for two fictional companies and one feature, and explain why the feature and weight counts match. Then extend to vectorization, two and five features, a changed input, and an incompatible-shape failure. The learner writes every code line.
+Explain what `np.allclose` establishes and why it is not proof that the financial model is good. Generalize the learner-written loop to iterate over feature columns without hard-coded indexes, then rerun the two-feature check before moving to the five-feature fixture.

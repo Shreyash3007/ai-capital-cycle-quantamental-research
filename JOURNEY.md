@@ -17,16 +17,17 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-24 | Initial navigation-only learner page created, then superseded by the integrated manual below. | Navigation only; T01 evidence unchanged. |
 | 2026-09-24 | [Cumulative learning manual](LEARNING_MANUAL.md) added with the full current lesson; its flow and the [knowledge graph](KNOWLEDGE_GRAPH.md) now use rendered PNGs instead of Mermaid code. | Documentation only; T01 evidence unchanged. |
 | 2026-09-24 | [T01 shape checkpoint](Journey/2026-09-24-ML-G01-T01.md): `w.shape == (1,)` and prediction shape `(2,)` answered correctly. | Correct shapes; explanation and Python run still open. |
+| 2026-09-28 | [T01 first saved Python run](Journey/2026-09-28-ML-G01-T01.md): learner-written loop and vectorized two-feature predictions both returned `[1.76 2.14]`; `np.allclose` returned `True`. | Code execution observed; explanation and transfer checks still open. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 
 ## Current learning state
 
 - [Progress ledger](PROGRESS.md): T01 0%, P00 0%, overall 0%.
-- [Current context](00_CURRENT_CONTEXT.md): T01 ready.
+- [Current context](00_CURRENT_CONTEXT.md): T01 in progress.
 - [Learning manual](LEARNING_MANUAL.md): the current integrated lesson and next action.
 - [Knowledge graph](KNOWLEDGE_GRAPH.md): current concepts and planned extensions.
-- [Session records](Journey/README.md): hand-calculation and shape answers saved; no Python implementation session yet.
+- [Session records](Journey/README.md): hand-calculation, shape answers, and first Python run saved.
 - [Evidence index](Evidence/README.md): no project implementation evidence yet.
 
 ## How a session enters this record

@@ -8,13 +8,13 @@ This is the one document to read and work from. It grows as you build the projec
 |---|---|
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
-| Active task | ML-G01-T01: prediction, first with one feature and two fictional companies |
-| Correct so far | Hand predictions `1.4` and `1.8`; `X.shape == (2, 1)`, `w.shape == (1,)`, and prediction shape `(2,)` |
-| Still to explain | Why the one feature in each row pairs with the one weight |
-| Code | The learner's Python file is empty; no run has been observed |
-| Evidence-backed progress | Task 0%, P00 0%, overall 0%; the first check is partial |
+| Active task | ML-G01-T01: loop and vectorized prediction, now with two features |
+| Correct so far | One-feature hand predictions and shapes; saved two-feature script produces `[1.76 2.14]` from both methods |
+| Still to explain | What numerical agreement proves, why feature and weight counts must match, and why this is not yet a financial conclusion |
+| Code | Learner-written script ran on 2026-09-28; `np.allclose` printed `True` |
+| Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
-![T01 learning flow, showing correct shapes and the next Python run](Visuals/current_lesson_flow.png)
+![T01 learning flow, showing observed two-feature execution and the next general-loop step](Visuals/current_lesson_flow.png)
 
 The picture is a rendered PNG, not a Mermaid code block. The table above gives the same state if an image viewer is unavailable.
 
@@ -74,7 +74,7 @@ Use these rules to reason, not to memorize an answer:
 
 Different example: suppose three companies each have **two** features. The input table has shape `(3, 2)`. There are two weights, so a one-dimensional weight array has shape `(2,)`. One output per company gives a prediction array of shape `(3,)`. The inner dimensions match: each two-feature row pairs with two weights.
 
-**Your current check:** you answered `w.shape == (1,)` and prediction shape `(2,)` correctly. In your own words, explain why one feature column and one weight fit together. Then test the shapes in Python.
+**Current run:** with two features, `x.shape` is `(2, 2)` and `w.shape` is `(2,)`. Each row's first feature pairs with `w[0]` and second feature pairs with `w[1]`. Your saved program produced `[1.76 2.14]` by both methods. You still need to explain that pairing in your own words.
 
 ## 4. The Python ideas you will use
 
@@ -86,9 +86,11 @@ Different example: suppose three companies each have **two** features. The input
 | Loop through values | `for item in values:` with an indented body | Makes each calculation visible before vectorizing. |
 | Define a function | `def name(inputs):` and `return result` | Lets a calculation be rerun on changed input. |
 | Dot product | `np.dot(matrix, weights)` | Multiplies each row's features by matching weights and sums them. |
-| Compare numeric outputs | `np.allclose(first, second)` | Later checks loop and vectorized results within floating-point tolerance. |
+| Compare numeric outputs | `np.allclose(first, second)` | Checks corresponding values within a small floating-point tolerance; it does not test whether the model is financially valid. |
 
 These are building blocks, not a finished solution. You decide the variable names, array contents, functions, and control flow in the learner file. If a Python line is unfamiliar, we will explain that line on a different tiny example before you write it for this task.
+
+`np.allclose(pred, pred_vectorized)` returned `True` in your two-feature run. This means both arrays have nearly equal values in corresponding positions. Small rounding differences can occur in decimal arithmetic, so numerical code often uses a tolerance rather than demanding identical stored bits. A `True` result only compares these two calculations on these inputs; both could still implement the same wrong finance idea.
 
 ## 5. Why the files are separated
 
@@ -107,16 +109,16 @@ These are building blocks, not a finished solution. You decide the variable name
 |---|---|---|---|
 | 1 | Calculate the two outputs by hand. | `1.4` and `1.8` | Done |
 | 2 | Explain the input, weight, and output shapes. | Correct sizes and one sentence on matching dimensions | In progress; sizes correct, explanation pending |
-| 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | Not started |
-| 4 | Write the vectorized NumPy form. | Show that both versions agree | Not started |
-| 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Later |
+| 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | Observed on two-feature data; explanation and generalization pending |
+| 4 | Write the vectorized NumPy form. | Show that both versions agree | Observed on two-feature data; explain `allclose` |
+| 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Two-feature run done; five-feature case later |
 | 6 | Change an input and intentionally create one bad shape. | Explain the changed output and the error | Later |
 
 The first complete shape-and-hand check earns the first T01 progress credit. Correct arithmetic and `X` alone are saved as partial evidence, not full credit. The mentor will update this page after each meaningful checkpoint.
 
 ## 7. When you reach the editor
 
-Open `D:\ML-project\Projects\AI Capital Cycle Quantamental Research Engine\src\01_vectorized_prediction.py`. It is empty on purpose. You write every assignment line. We will start with the smallest code that shows the inputs and one result; we will run it before adding another idea.
+Open `D:\ML-project\Projects\AI Capital Cycle Quantamental Research Engine\src\01_vectorized_prediction.py`. It contains your learner-written two-feature version. Keep that version working while you make the loop handle an arbitrary number of feature columns.
 
 From PowerShell, after you have written the code, the file can be run from any directory with:
 
@@ -132,7 +134,7 @@ Today's picture shows the task path, not model performance. When you reach gradi
 
 ## Next action
 
-Write the smallest working version yourself in the empty Python file: create the two revenue-growth inputs, one trial weight, and bias; print the input and weight shapes; then use a loop to print one prediction per company. Predict the output before you run it. Show the run output and explain in one sentence why each one-feature row can pair with the one weight.
+Explain in your own words what `np.allclose(...)=True` establishes and what it cannot establish. Then generalize only your loop: for each company row `i`, start a subtotal, visit each feature column `j`, add the product of `x[i, j]` and `w[j]`, and add `b` once after the feature products. Rerun the current two-feature data. Both output arrays should remain `[1.76 2.14]` and the comparison should remain `True`. This prepares the same loop for five features without writing five separate terms.
 
 ## How this manual is maintained
 
