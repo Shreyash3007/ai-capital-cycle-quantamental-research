@@ -9,12 +9,12 @@ This is the one document to read and work from. It grows as you build the projec
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
 | Active task | ML-G01-T01: loop and vectorized prediction, now with two features |
-| Correct so far | One-feature hand predictions and shapes; two-feature agreement; full six-row five-feature agreement, including a changed-input run |
+| Correct so far | One-feature hand predictions and shapes; full six-row agreement; changed-input run; incompatible-shape error observed and restored |
 | Still to explain | What numerical agreement proves, why feature and weight counts must match, and why this is not yet a financial conclusion |
-| Code | Learner-written calculations ran on six five-feature rows and one changed input; `np.allclose` printed `True` both times |
+| Code | Original six-row script runs again with five weights; four-weight failure was tested and repaired |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
-![T01 learning flow, showing the changed-input run and next shape-error experiment](Visuals/current_lesson_flow.png)
+![T01 learning flow, showing the observed shape error and pending explanation](Visuals/current_lesson_flow.png)
 
 The picture is a rendered PNG, not a Mermaid code block. The table above gives the same state if an image viewer is unavailable.
 
@@ -112,7 +112,7 @@ These are building blocks, not a finished solution. You decide the variable name
 | 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | General nested loop observed on two-feature data; explanation pending |
 | 4 | Write the vectorized NumPy form. | Show that both versions agree | Observed on two-feature data; explain `allclose` |
 | 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Full and changed-input runs observed; independent explanation pending |
-| 6 | Change an input and intentionally create one bad shape. | Explain the changed output and the error | Later |
+| 6 | Change an input and intentionally create one bad shape. | Explain the changed output and the error | Runs observed; learner explanation pending |
 
 The first complete shape-and-hand check earns the first T01 progress credit. Correct arithmetic and `X` alone are saved as partial evidence, not full credit. The mentor will update this page after each meaningful checkpoint.
 
@@ -149,7 +149,9 @@ The weights are in the same column order: `[1.2, 0.8, 1.0, 0.9, -0.3]`, with bia
 
 The frozen baseline printed `[2.687 2.376 2.955 1.973 2.004 2.032]`. After you changed only NexaCloud revenue growth from `0.40` to `0.50`, both methods printed `[2.687 2.496 2.955 1.973 2.004 2.032]` and `True`. Only NexaCloud moved, by `0.120`. The mentor supplied `(0.50 - 0.40) * 1.2 = 0.120`; explain this in your own words before claiming the check as independent.
 
-Next restore `0.40` in the saved fixture. Temporarily remove one of the five weights while leaving five feature columns, predict where the script will fail, run and read the traceback, then restore the correct five-weight array. This is a controlled failure experiment, not a permanent model change.
+You then tried four weights against five feature columns. The loop printed six numbers because its inner loop ran only `len(w)` times and skipped column five. `np.dot` raised `ValueError` because its inner dimensions were `5` and `4`. Your saved script now has the fifth weight and frozen NexaCloud `0.40` restored; both methods again produce the original six values and `True`.
+
+Next explain in your own words why the loop continued but `np.dot` stopped. Also state what one prediction represents in this toy model and why two matching calculations do not prove a financially accurate model.
 
 ## How this manual is maintained
 

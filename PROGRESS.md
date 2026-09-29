@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The learner's general loop and vectorized prediction agree on the full six-row, five-feature table and after changing NexaCloud revenue growth from `0.40` to `0.50`. Only NexaCloud's prediction moved, from `2.376` to `2.496`. The mentor supplied the `0.120` sensitivity arithmetic; independent explanation and the shape-failure experiment remain open, so no complete T01 check has been credited yet.
+The learner's general loop and vectorized prediction agree on the full six-row, five-feature table and after changing NexaCloud revenue growth from `0.40` to `0.50`. With four weights, the loop silently omitted a feature while `np.dot` raised a shape error. The learner restored the frozen data and five weights; the mentor reran the script successfully. Independent explanations remain open, so no complete T01 check has been credited yet.
 
 The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
@@ -79,7 +79,7 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 | Learner-written loop on starter data | open: starter result shown in dialogue; explanation and durable run record pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
 | Vectorized prediction agrees on starter data | open: starter agreement shown in dialogue; comparison meaning pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
 | Two- and five-feature agreement plus changed input | open: original and changed-input agreement observed; independent explanation pending | [verified runs](Journey/2026-09-28-ML-G01-T01.md) |
-| Shape failure and finance meaning explained | open | none |
+| Shape failure and finance meaning explained | open: failure observed and repaired; learner diagnosis and finance meaning pending | [shape-failure run](Journey/2026-09-28-ML-G01-T01.md) |
 
 If T01 reaches 100%, P00 gains 15 percentage points and the overall project gains 1.5 percentage points (`10%` phase weight x `15%` task weight). Other tasks have their own weights and acceptance checks.
 
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Restore NexaCloud revenue growth to the frozen `0.40`. Then temporarily use four weights for the five-feature table, predict which part of the script will fail, run, read the error, and restore all five weights. Explain why `np.allclose` agreement is not proof of financial accuracy.
+Explain why the four-weight loop printed six incomplete predictions while `np.dot` rejected the `(6, 5)` by `(4,)` multiplication. Then explain what one output represents and why `np.allclose` agreement is not proof of financial accuracy. The saved script is restored and runs correctly.
