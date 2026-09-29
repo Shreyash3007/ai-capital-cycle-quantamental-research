@@ -2,8 +2,8 @@
 type: task
 id: ML-G01-T02
 goal: ML-G01
-status: ready-for-teaching
-evidence_status: planned
+status: in-progress
+evidence_status: assisted-first-error-run
 updated: 2026-09-29
 ---
 
@@ -58,3 +58,7 @@ Use the empty `../../Projects/AI Capital Cycle Quantamental Research Engine/src/
 - The residual sign, cost meaning, and limitation are explained in the learner's words.
 - The saved plot is inspected and traceable to the executed code and frozen inputs.
 - Assistance and a later independent transfer case are recorded before closing T02.
+
+## Current checkpoint
+
+Both frozen arrays and the first-row error, squared error, and residual were typed by the learner and rerun by the mentor. This was an assisted first pass; the learner's hand explanation, full cost, changed-target case, failure case, plot, and independent transfer remain open. See [the session record](../../Journey/2026-09-29-ML-G01-T02.md).

@@ -10,8 +10,8 @@ This is the one document to read and work from. It grows as you build the projec
 | Project | P00, first-principles valuation-stretch foundation |
 | Active task | ML-G01-T02: cost and residuals; T01 independent transfer remains open |
 | Correct so far | T01 guarded loop and vectorized functions agree on all six named company predictions; changed-input and shape-failure runs observed |
-| Still to demonstrate | T01 independent explanation; T02 hand error, cost, signed residuals, changed-target run, and plot |
-| Code | T01 named-output script runs; T02 learner file is empty and ready for your code |
+| Still to demonstrate | T01 independent explanation; T02 hand explanation, full cost, named residuals, changed-target run, and plot |
+| Code | T01 named-output script runs; T02 first-row error calculation now runs |
 | Evidence-backed progress | T01 0%, T02 0%, P00 0%, overall 0%; successful assisted runs are not independent mastery |
 
 ![Current learning flow from prediction to cost and residuals](Visuals/current_lesson_flow.png)
@@ -50,7 +50,9 @@ Use [02_cost_and_residuals.py](Projects/AI%20Capital%20Cycle%20Quantamental%20Re
 
 ## Do this now
 
-First, enter the two arrays and print their shapes. Before running, calculate AstraCompute's error (`prediction - observed`), squared error, and signed residual (`observed - prediction`) by hand. Then run the file and compare. The mentor will teach every unfamiliar Python line using the delivery example first. Once this checkpoint runs, write the cost function, test a changed target and a mismatched length, then make and inspect a labeled residual plot. You do not need to reopen other documents to follow the lesson.
+The two arrays now run with shape `(6,)`. Your script prints AstraCompute's error `-0.11299999999999999`, squared error `0.012768999999999997`, and signed residual `0.11299999999999999`. Those are `-0.113`, `0.012769`, and `+0.113` at useful precision. Explain this first row by hand in your own words; the code run alone does not show the hand check.
+
+**Next work block:** write a reusable, shape-checked cost function for all six rows; print its result and a company-name residual table. The mentor will first show a different delivery-time example and explain the Python lines. Then change one observed target, predict the direction of its residual and cost change, run it, and restore the frozen input. After that, test a mismatched length and make a labeled residual plot. You do not need to reopen other documents to follow this lesson.
 
 T01's named output is a valid assisted run. Its explanation and independent transfer remain open, but they do not stop us from learning T02. Task credit follows demonstrated understanding, not how many scripts have been typed.
 
