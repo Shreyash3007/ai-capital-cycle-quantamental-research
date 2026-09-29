@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The learner wrote a two-feature loop and vectorized prediction in the task file. On 2026-09-29 the learner generalized the loop over feature columns; the saved script ran and printed `[1.76 2.14]` from both paths and `True` from `np.allclose`. The earlier one-feature runs were shown in dialogue, but the saved file now contains the two-feature version. Independent explanation and transfer to five features remain open, so no complete T01 check has been credited yet.
+The learner's general loop and vectorized prediction agree on the full six-row, five-feature table and after changing NexaCloud revenue growth from `0.40` to `0.50`. Only NexaCloud's prediction moved, from `2.376` to `2.496`. The mentor supplied the `0.120` sensitivity arithmetic; independent explanation and the shape-failure experiment remain open, so no complete T01 check has been credited yet.
 
 The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
@@ -78,7 +78,7 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 | Two-row, one-feature shapes and hand predictions | open: dimension-matching explanation pending | [hand predictions and `X` shape](Journey/2026-09-23-ML-G01-T01.md); [remaining shapes](Journey/2026-09-24-ML-G01-T01.md) |
 | Learner-written loop on starter data | open: starter result shown in dialogue; explanation and durable run record pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
 | Vectorized prediction agrees on starter data | open: starter agreement shown in dialogue; comparison meaning pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
-| Two- and five-feature agreement plus changed input | open: full six-row, five-feature agreement observed; changed-input run pending | [verified runs](Journey/2026-09-28-ML-G01-T01.md) |
+| Two- and five-feature agreement plus changed input | open: original and changed-input agreement observed; independent explanation pending | [verified runs](Journey/2026-09-28-ML-G01-T01.md) |
 | Shape failure and finance meaning explained | open | none |
 
 If T01 reaches 100%, P00 gains 15 percentage points and the overall project gains 1.5 percentage points (`10%` phase weight x `15%` task weight). Other tasks have their own weights and acceptance checks.
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-The full six-row, five-feature fixture now runs. Change only NexaCloud's revenue growth from `0.40` to `0.50`, predict which result changes and by how much, then rerun both methods. After that, test a bad shape and explain what `np.allclose` proves and cannot prove about the finance model.
+Restore NexaCloud revenue growth to the frozen `0.40`. Then temporarily use four weights for the five-feature table, predict which part of the script will fail, run, read the error, and restore all five weights. Explain why `np.allclose` agreement is not proof of financial accuracy.

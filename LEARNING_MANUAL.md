@@ -9,12 +9,12 @@ This is the one document to read and work from. It grows as you build the projec
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
 | Active task | ML-G01-T01: loop and vectorized prediction, now with two features |
-| Correct so far | One-feature hand predictions and shapes; two-feature agreement; all six five-feature rows produce matching loop and vectorized predictions |
+| Correct so far | One-feature hand predictions and shapes; two-feature agreement; full six-row five-feature agreement, including a changed-input run |
 | Still to explain | What numerical agreement proves, why feature and weight counts must match, and why this is not yet a financial conclusion |
-| Code | Learner-written calculations ran on six five-feature rows on 2026-09-29; `np.allclose` printed `True` |
+| Code | Learner-written calculations ran on six five-feature rows and one changed input; `np.allclose` printed `True` both times |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
-![T01 learning flow, showing observed two-feature execution and the next general-loop step](Visuals/current_lesson_flow.png)
+![T01 learning flow, showing the changed-input run and next shape-error experiment](Visuals/current_lesson_flow.png)
 
 The picture is a rendered PNG, not a Mermaid code block. The table above gives the same state if an image viewer is unavailable.
 
@@ -111,7 +111,7 @@ These are building blocks, not a finished solution. You decide the variable name
 | 2 | Explain the input, weight, and output shapes. | Correct sizes and one sentence on matching dimensions | In progress; sizes correct, explanation pending |
 | 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | General nested loop observed on two-feature data; explanation pending |
 | 4 | Write the vectorized NumPy form. | Show that both versions agree | Observed on two-feature data; explain `allclose` |
-| 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | All six five-feature rows run; changed input pending |
+| 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Full and changed-input runs observed; independent explanation pending |
 | 6 | Change an input and intentionally create one bad shape. | Explain the changed output and the error | Later |
 
 The first complete shape-and-hand check earns the first T01 progress credit. Correct arithmetic and `X` alone are saved as partial evidence, not full credit. The mentor will update this page after each meaningful checkpoint.
@@ -147,7 +147,9 @@ Your saved script now runs on this full frozen synthetic table, with five featur
 
 The weights are in the same column order: `[1.2, 0.8, 1.0, 0.9, -0.3]`, with bias `1.0`. Both paths produced six values and `np.allclose(...)=True`. That shows implementation agreement on this table, not financial accuracy.
 
-Your full-table run now prints `[2.687 2.376 2.955 1.973 2.004 2.032]` from both calculations. The next experiment is to change only NexaCloud's revenue growth from `0.40` to `0.50`. Before running, predict which one of the six outputs should change and the size of that change using the revenue-growth weight `1.2`. Rerun and compare both methods. Keep the original output above as the baseline.
+The frozen baseline printed `[2.687 2.376 2.955 1.973 2.004 2.032]`. After you changed only NexaCloud revenue growth from `0.40` to `0.50`, both methods printed `[2.687 2.496 2.955 1.973 2.004 2.032]` and `True`. Only NexaCloud moved, by `0.120`. The mentor supplied `(0.50 - 0.40) * 1.2 = 0.120`; explain this in your own words before claiming the check as independent.
+
+Next restore `0.40` in the saved fixture. Temporarily remove one of the five weights while leaving five feature columns, predict where the script will fail, run and read the traceback, then restore the correct five-weight array. This is a controlled failure experiment, not a permanent model change.
 
 ## How this manual is maintained
 

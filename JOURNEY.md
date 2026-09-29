@@ -21,6 +21,7 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-29 | [T01 nested-loop continuation](Journey/2026-09-28-ML-G01-T01.md): learner generalized the loop over feature columns; saved script reran with matching two-feature outputs. | General loop execution observed; five-feature and explanation checks still open. |
 | 2026-09-29 | [T01 one-row five-feature run](Journey/2026-09-28-ML-G01-T01.md): both methods returned `2.687` for AstraCompute; mentor supplied the matching hand arithmetic. | One-row transfer observed; full fixture and explanations remain open. |
 | 2026-09-29 | [T01 full six-row run](Journey/2026-09-28-ML-G01-T01.md): loop and vectorized outputs matched on all five-feature company rows. | Full fixture executed; changed-input and explanation checks remain open. |
+| 2026-09-29 | [T01 changed-input run](Journey/2026-09-28-ML-G01-T01.md): NexaCloud revenue growth increased by `0.10`; only its prediction rose by `0.120`, with both implementations agreeing. | Sensitivity run observed; independent explanation and shape-failure check remain open. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 

@@ -14,7 +14,7 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner work
 
 - Project: AI Capital Cycle Quantamental Research Engine.
 - Public repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research).
-- Publication state: the two-feature and one-row five-feature runs are on public `main`; the full six-row five-feature run awaits the next reviewed push.
+- Publication state: the full six-row five-feature baseline is on public `main`; the changed-input run awaits the next reviewed push.
 - Mentor Mode: active; follow [MENTOR_MODE.md](MENTOR_MODE.md).
 - Phase: P00, C1W2 first-principles valuation engine.
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
@@ -24,7 +24,7 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner work
 - Progress: task 0%, phase 0%, overall 0% because execution is observed but no full explained acceptance check is closed; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
 - Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
-- Next action: the learner's saved full-table run shows `x.shape == (6, 5)`, `w.shape == (5,)`, matching loop and vectorized outputs `[2.687 2.376 2.955 1.973 2.004 2.032]`, and `True` from `np.allclose`. Ask for the prediction shape `(6,)`, then have the learner change only NexaCloud's revenue growth from `0.40` to `0.50`, predict which output changes and by how much, and rerun. Explanation and failure checks remain open.
+- Next action: the learner changed only NexaCloud revenue growth from `0.40` to `0.50`; the saved script produced `[2.687 2.496 2.955 1.973 2.004 2.032]` from both paths and `True` from `np.allclose`. The mentor supplied the `0.120` sensitivity arithmetic, so ask for the learner's own explanation. Then restore `0.40`, temporarily use four weights with five feature columns, predict and inspect the error, and restore all five weights.
 
 ## Current research target
 
@@ -76,4 +76,4 @@ The cross-phase [software engineering path](ENGINEERING_LEARNING_PATH.md) now in
 
 ## Evidence state
 
-The learner's general nested-loop code has executed on the full six-row, five-feature table. The required explanations, changed input, and failure experiment remain open. The current run is implementation evidence, not a completed research capability. After each task, record observed checks in `PROGRESS.md`, then refresh this note last.
+The learner's general nested-loop code has executed on the full six-row, five-feature table and a changed input. The required independent explanations and shape-failure experiment remain open. The current run is implementation evidence, not a completed research capability. After each task, record observed checks in `PROGRESS.md`, then refresh this note last.
