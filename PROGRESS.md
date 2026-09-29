@@ -13,7 +13,7 @@ Active phase: P00 - C1W2 first-principles valuation engine
 Active goal: ML-G01
 Active teaching task: ML-G01-T02 - Cost and residuals
 Open earlier task: ML-G01-T01 - Vectorized prediction
-Evidence state: T01 ASSISTED RUN OBSERVED; T01 EXPLANATION AND TRANSFER PENDING; T02 FIRST ERROR RUN OBSERVED
+Evidence state: T01 ASSISTED RUN OBSERVED; T01 EXPLANATION AND TRANSFER PENDING; T02 ASSISTED COST AND RESIDUAL RUN OBSERVED
 ```
 
 ## Progress summary
@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The learner's guarded loop and vectorized prediction functions agree on all six named companies. The mentor reran the saved script and observed `Methods agree: True` with predictions `[2.687, 2.376, 2.955, 1.973, 2.004, 2.032]` (the first printed with ordinary floating-point rounding). A changed-input run and intentional four-weight failure were also observed. This was an assisted first pass; independent transfer and explanation remain open, so T01 earns no completed check yet. In T02, the learner's two arrays and AstraCompute error, squared error, and residual ran correctly. The hand explanation and full cost are not yet observed.
+The learner's guarded loop and vectorized prediction functions agree on all six named companies. The mentor reran the saved script and observed `Methods agree: True` with predictions `[2.687, 2.376, 2.955, 1.973, 2.004, 2.032]` (the first printed with ordinary floating-point rounding). A changed-input run and intentional four-weight failure were also observed. This was an assisted first pass; independent transfer and explanation remain open, so T01 earns no completed check yet. In T02, the learner's function returned cost `0.017894916666666653`, and six named residuals printed. Changed-target behavior, a failing guard, plot, and learner explanation are not yet observed.
 
 The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
@@ -62,7 +62,7 @@ Overall completion is the sum of each phase weight multiplied by its evidence-ba
 | Task | Weight inside P00 | State | Completion | Evidence |
 |---|---:|---|---:|---|
 | ML-G01-T01 - Loop and vectorized prediction | 15% | open transfer | 0% | [named run; explanation pending](Journey/2026-09-28-ML-G01-T01.md) |
-| ML-G01-T02 - Cost function and residual meaning | 15% | in progress | 0% | [first error run](Journey/2026-09-29-ML-G01-T02.md); full cost and explanation open |
+| ML-G01-T02 - Cost function and residual meaning | 15% | in progress | 0% | [assisted baseline cost and residual run](Journey/2026-09-29-ML-G01-T02.md); transfer and explanation open |
 | ML-G01-T03 - Gradients and batch gradient descent | 20% | planned | 0% | planned |
 | ML-G01-T04 - Feature scaling and convergence | 15% | planned | 0% | planned |
 | ML-G01-T05 - Feature engineering and nonlinear terms | 15% | planned | 0% | planned |
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-The frozen arrays and first error have run. Ask for the AstraCompute hand explanation, then complete a shape-checked cost function and named residual table. Continue through a changed target, failure case, and residual plot. Return to T01 for independent transfer and a short defense before closing it; neither task has earned mastery credit yet.
+The frozen arrays, shape-checked cost function, and named residual table have run. Ask for the AstraCompute hand explanation and cost meaning. Next test a changed target and a length mismatch, then make the residual plot. Return to T01 for independent transfer and a short defense before closing it; neither task has earned mastery credit yet.
