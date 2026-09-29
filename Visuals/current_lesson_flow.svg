@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
   <title id="title">Current learning flow: prediction to cost</title>
-  <desc id="desc">The assisted six-company prediction script and T02 baseline cost and residual table run. Changed target and guard tests are next; independent T01 transfer remains open.</desc>
+  <desc id="desc">The assisted six-company prediction script, T02 baseline cost and residual table, and changed CobaltAI target run. Sign explanation and guard test are next; independent T01 transfer remains open.</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
       <path d="M 0 0 L 12 6 L 0 12 z" fill="#8a96a3"/>
@@ -49,7 +49,7 @@
   <rect x="70" y="615" width="760" height="75" rx="6" fill="#fff" stroke="#c5cdd5" stroke-width="2"/>
   <circle cx="108" cy="652" r="21" fill="#6f7e8b"/>
   <text x="108" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">6</text>
-  <text x="150" y="652" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Change target, test guard, make plot</text>
+  <text x="150" y="652" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Changed target runs; test guard next</text>
   <text x="770" y="660" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">NEXT</text>
 
   <text x="70" y="732" font-family="Arial, sans-serif" font-size="17" fill="#52606d">Progress stays at 0% until a complete acceptance check is demonstrated.</text>

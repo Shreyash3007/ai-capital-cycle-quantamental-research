@@ -61,4 +61,4 @@ Use the empty `../../Projects/AI Capital Cycle Quantamental Research Engine/src/
 
 ## Current checkpoint
 
-Both frozen arrays and the first-row error, squared error, and residual were typed by the learner and rerun by the mentor. This was an assisted first pass; the learner's hand explanation, full cost, changed-target case, failure case, plot, and independent transfer remain open. See [the session record](../../Journey/2026-09-29-ML-G01-T02.md).
+The learner's baseline cost and six named residuals ran, as did a copied CobaltAI target change from `2.400` to `2.200`; the original target stayed intact and cost fell. This was an assisted first pass. The learner's sign and cost-denominator explanation needs correction and recheck; the failing guard call, plot, and independent transfer remain open. See [the session record](../../Journey/2026-09-29-ML-G01-T02.md).

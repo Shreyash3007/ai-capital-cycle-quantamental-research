@@ -29,6 +29,7 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-29 | [T01 named-output checkpoint](Journey/2026-09-28-ML-G01-T01.md): saved script reran with six company names and `Methods agree: True`; T02 cost and residuals opened for teaching. | Assisted T01 run; T02 has no learner run yet. |
 | 2026-09-29 | [T02 first-error checkpoint](Journey/2026-09-29-ML-G01-T02.md): learner's saved arrays both have shape `(6,)`; AstraCompute error, squared error, and residual reran correctly. | Assisted first-row arithmetic; hand explanation and full cost still open. |
 | 2026-09-29 | [T02 cost and residual checkpoint](Journey/2026-09-29-ML-G01-T02.md): learner's shape-checked function returned cost `0.017894916666666653`, and all six named residuals printed. | Assisted baseline run; changed-target, failure, plot, and explanation still open. |
+| 2026-09-29 | [T02 changed-target checkpoint](Journey/2026-09-29-ML-G01-T02.md): copied target left the baseline intact; CobaltAI residual and total cost both fell. A sign and cost-denominator misunderstanding surfaced. | Changed-target run observed; explanation, guard failure, plot, and transfer open. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 

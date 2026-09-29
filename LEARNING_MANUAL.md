@@ -10,8 +10,8 @@ This is the one document to read and work from. It grows as you build the projec
 | Project | P00, first-principles valuation-stretch foundation |
 | Active task | ML-G01-T02: cost and residuals; T01 independent transfer remains open |
 | Correct so far | T01 guarded loop and vectorized functions agree on all six named company predictions; changed-input and shape-failure runs observed |
-| Still to demonstrate | T01 independent explanation; T02 hand explanation, changed-target run, guard failure, plot, and transfer |
-| Code | T01 named-output script runs; T02 baseline cost and named residual table now run |
+| Still to demonstrate | T01 independent explanation; T02 sign and cost explanation, guard failure, plot, and transfer |
+| Code | T01 named-output script runs; T02 baseline and copied changed-target runs now work |
 | Evidence-backed progress | T01 0%, T02 0%, P00 0%, overall 0%; successful assisted runs are not independent mastery |
 
 ![Current learning flow from prediction to cost and residuals](Visuals/current_lesson_flow.png)
@@ -35,6 +35,8 @@ A delivery model predicts 8 and 10 minutes; the actual times are 9 and 7 minutes
 
 The C1W1 cost is the sum of squared errors divided by twice the number of rows: `J = (1 + 9) / (2 * 2) = 2.5`. Squaring makes both misses positive and gives a large miss more influence. The signed residual answers a different question: which side of the prediction was the actual value on? A positive valuation residual means observed valuation was above the model's estimate, not that the company is in a bubble.
 
+The **mean squared error** for those two deliveries would be `(1 + 9) / 2 = 5`. The course cost is half of that: `5 / 2 = 2.5`. Dividing by the row count makes the scale comparable when the number of observations changes; the extra `2` is a mathematical convention that simplifies later gradient formulas. It does not erase error or change which weights minimize cost. Cost is nonnegative and has squared output units, so it is not itself a signed valuation gap.
+
 ## Your frozen inputs
 
 | Company | Trial prediction | Synthetic observed log multiple |
@@ -50,7 +52,7 @@ Use [02_cost_and_residuals.py](Projects/AI%20Capital%20Cycle%20Quantamental%20Re
 
 ## Do this now
 
-The two arrays run with shape `(6,)`. Your script prints AstraCompute's error `-0.11299999999999999`, squared error `0.012768999999999997`, and signed residual `0.11299999999999999`. Those are `-0.113`, `0.012769`, and `+0.113` at useful precision. Your function returns the six-row cost `0.017894916666666653`; the named residuals are approximately `+0.113`, `-0.176`, `+0.145`, `-0.073`, `+0.096`, and `+0.368`. Explain the first row and cost meaning in your own words; code execution alone does not show that understanding.
+The two arrays run with shape `(6,)`. Your script prints AstraCompute's error `-0.11299999999999999`, squared error `0.012768999999999997`, and signed residual `0.11299999999999999`. Those are `-0.113`, `0.012769`, and `+0.113` at useful precision. The sign comes from subtraction order: `2.687 - 2.800 = -0.113` versus `2.800 - 2.687 = +0.113`. It does not mean an AstraCompute feature is negative. Your function returns the six-row cost `0.017894916666666653`; the named residuals are approximately `+0.113`, `-0.176`, `+0.145`, `-0.073`, `+0.096`, and `+0.368`. Explain the first row and cost meaning in your own words after this correction; code execution alone does not show that understanding.
 
 **Next work block:** test whether the cost reacts correctly to changed data and whether the guard rejects a bad shape. First, an unrelated example of keeping an original array safe:
 
@@ -61,7 +63,7 @@ changed_minutes[0] = 10.0
 # actual_minutes is still [9.0, 7.0]; changed_minutes is [10.0, 7.0]
 ```
 
-`.copy()` makes a separate array. Without it, an in-place change would alter the frozen baseline too. In your finance script, make a copy of `observed`, change **only CobaltAI's observed value** from `2.400` to `2.200`, and predict whether its residual and the total cost rise or fall. Run the changed case and confirm that printing the original `observed` still shows `2.400` at CobaltAI's position. Next, pass one fewer observed value to `compute_cost` and show its `ValueError`; the mentor will explain array slicing on a different example before that edit. Then restore a clean baseline and make a labeled residual plot. You do not need to reopen other documents to follow this lesson.
+`.copy()` makes a separate array. Without it, an in-place change would alter the frozen baseline too. Your copied CobaltAI target changed from `2.400` to `2.200`; the original remained `2.400`. Its residual fell from about `+0.368` to `+0.168`, and total cost fell to `0.008961583333333334`. This makes sense because `2.200` is closer to the prediction `2.032`. Next, pass one fewer observed value to `compute_cost` and show its `ValueError`; the mentor will explain array slicing on a different example before that edit. Then restore a clean baseline and make a labeled residual plot. You do not need to reopen other documents to follow this lesson.
 
 T01's named output is a valid assisted run. Its explanation and independent transfer remain open, but they do not stop us from learning T02. Task credit follows demonstrated understanding, not how many scripts have been typed.
 
