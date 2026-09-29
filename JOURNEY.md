@@ -20,6 +20,7 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-28 | [T01 first saved Python run](Journey/2026-09-28-ML-G01-T01.md): learner-written loop and vectorized two-feature predictions both returned `[1.76 2.14]`; `np.allclose` returned `True`. | Code execution observed; explanation and transfer checks still open. |
 | 2026-09-29 | [T01 nested-loop continuation](Journey/2026-09-28-ML-G01-T01.md): learner generalized the loop over feature columns; saved script reran with matching two-feature outputs. | General loop execution observed; five-feature and explanation checks still open. |
 | 2026-09-29 | [T01 one-row five-feature run](Journey/2026-09-28-ML-G01-T01.md): both methods returned `2.687` for AstraCompute; mentor supplied the matching hand arithmetic. | One-row transfer observed; full fixture and explanations remain open. |
+| 2026-09-29 | [T01 full six-row run](Journey/2026-09-28-ML-G01-T01.md): loop and vectorized outputs matched on all five-feature company rows. | Full fixture executed; changed-input and explanation checks remain open. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 

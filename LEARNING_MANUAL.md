@@ -9,9 +9,9 @@ This is the one document to read and work from. It grows as you build the projec
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
 | Active task | ML-G01-T01: loop and vectorized prediction, now with two features |
-| Correct so far | One-feature hand predictions and shapes; two-feature nested-loop agreement; one five-feature row produces `[2.687]` from both methods |
+| Correct so far | One-feature hand predictions and shapes; two-feature agreement; all six five-feature rows produce matching loop and vectorized predictions |
 | Still to explain | What numerical agreement proves, why feature and weight counts must match, and why this is not yet a financial conclusion |
-| Code | Learner-written nested loop ran on one five-feature row on 2026-09-29; `np.allclose` printed `True` |
+| Code | Learner-written calculations ran on six five-feature rows on 2026-09-29; `np.allclose` printed `True` |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
 ![T01 learning flow, showing observed two-feature execution and the next general-loop step](Visuals/current_lesson_flow.png)
@@ -111,7 +111,7 @@ These are building blocks, not a finished solution. You decide the variable name
 | 2 | Explain the input, weight, and output shapes. | Correct sizes and one sentence on matching dimensions | In progress; sizes correct, explanation pending |
 | 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | General nested loop observed on two-feature data; explanation pending |
 | 4 | Write the vectorized NumPy form. | Show that both versions agree | Observed on two-feature data; explain `allclose` |
-| 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Two-feature case and one five-feature row run; remaining rows later |
+| 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | All six five-feature rows run; changed input pending |
 | 6 | Change an input and intentionally create one bad shape. | Explain the changed output and the error | Later |
 
 The first complete shape-and-hand check earns the first T01 progress credit. Correct arithmetic and `X` alone are saved as partial evidence, not full credit. The mentor will update this page after each meaningful checkpoint.
@@ -134,7 +134,7 @@ Today's picture shows the task path, not model performance. When you reach gradi
 
 ## Next action
 
-Your nested loop and `np.dot` both predicted `2.687` for AstraCompute's five-feature row. The mentor's hand check was `0.660 + 0.576 + 0.280 + 0.225 - 0.054 + 1.000 = 2.687`. Next, add the other five rows from this frozen synthetic table, keeping five values in every row:
+Your saved script now runs on this full frozen synthetic table, with five features in every row:
 
 | Company | Revenue growth | Gross margin | Operating margin | FCF margin | R&D intensity |
 |---|---:|---:|---:|---:|---:|
@@ -145,7 +145,9 @@ Your nested loop and `np.dot` both predicted `2.687` for AstraCompute's five-fea
 | DataForge | 0.25 | 0.58 | 0.15 | 0.14 | 0.12 |
 | CobaltAI | 0.50 | 0.65 | 0.05 | -0.02 | 0.40 |
 
-Keep weights in the same column order: `[1.2, 0.8, 1.0, 0.9, -0.3]` and bias `1.0`. Before running, predict the output shape. Then compare loop and vectorized outputs. `np.allclose(...)=True` will show implementation agreement, not financial accuracy.
+The weights are in the same column order: `[1.2, 0.8, 1.0, 0.9, -0.3]`, with bias `1.0`. Both paths produced six values and `np.allclose(...)=True`. That shows implementation agreement on this table, not financial accuracy.
+
+Your full-table run now prints `[2.687 2.376 2.955 1.973 2.004 2.032]` from both calculations. The next experiment is to change only NexaCloud's revenue growth from `0.40` to `0.50`. Before running, predict which one of the six outputs should change and the size of that change using the revenue-growth weight `1.2`. Rerun and compare both methods. Keep the original output above as the baseline.
 
 ## How this manual is maintained
 
