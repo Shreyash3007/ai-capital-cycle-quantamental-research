@@ -18,7 +18,7 @@ The phase does not claim that the model predicts returns or proves a bubble.
 
 ## Delivery rhythm
 
-Give each assignment as one larger runnable work block with a worked example from another domain. The learner writes the implementation, runs original/changed/failure cases, and explains the result in one review packet. Small checkpoints are used only to unblock a specific error. The task IDs and acceptance gates below still track evidence separately, but they do not require a separate chat turn for every line or shape. See [Mentor Mode](MENTOR_MODE.md) for the pacing rule.
+Keep each assignment aimed at one larger runnable outcome, with a worked example from another domain. Teach each unfamiliar building block line by line on its first use, including exact first-pass code when needed; the learner types and runs it. Then ask for an independent changed case and collect original/changed/failure evidence in one review packet. The task IDs and acceptance gates track demonstrated work separately from assisted teaching. See [Mentor Mode](MENTOR_MODE.md) for the pacing rule.
 
 P00 also introduces the software structure in [the engineering path](ENGINEERING_LEARNING_PATH.md): what belongs in `src`, `data`, `outputs`, and `tests`, how a script runs, and when a function or module is worth extracting. This is taught alongside the learner's actual code, not as a separate setup project. SQL and web services wait for later phases.
 

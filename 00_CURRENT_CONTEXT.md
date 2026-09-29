@@ -14,7 +14,7 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner work
 
 - Project: AI Capital Cycle Quantamental Research Engine.
 - Public repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research).
-- Publication state: the changed-input run is on public `main`; the shape-failure and restored-baseline checkpoint awaits the next reviewed push.
+- Publication state: the observed prediction runs and the integrated-work-block plan are on public `main`; the learner has a local, unfinished `vector_pred` definition that must not be overwritten or published as completed code.
 - Mentor Mode: active; follow [MENTOR_MODE.md](MENTOR_MODE.md).
 - Phase: P00, C1W2 first-principles valuation engine.
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
@@ -24,7 +24,7 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner work
 - Progress: task 0%, phase 0%, overall 0% because execution is observed but no full explained acceptance check is closed; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
 - Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
-- Next action: assign the integrated T01 prediction-audit capstone in `LEARNING_MANUAL.md`. A worked delivery-scoring example is already there. The learner writes reusable loop/vectorized functions, shape checks, named output, and original/changed/failure runs, then gives one short research defense. Review the packet together instead of asking another sequence of single-line questions. The saved baseline script is restored and runs. After T01, move promptly to cost and gradient descent in larger work blocks.
+- Next action: the learner has explicitly asked for exact, line-by-line teaching on new concepts before independent code. The saved file ends with `def vector_pred(x, w, b):` and no body. Start with the simple worked function example in `LEARNING_MANUAL.md`, then show the exact indented `return np.dot(x, w) + b` line and the function call for the learner to type and run. Explain `def`, parameters, indentation, `return`, and the call without assuming prior Python knowledge. Label this assisted; after it works, teach validation and loop-function extraction, then use an independent changed case for mastery.
 
 ## Current research target
 
@@ -57,7 +57,7 @@ The cross-phase [software engineering path](ENGINEERING_LEARNING_PATH.md) now in
 
 ## Important boundaries
 
-- Before every new request to write or revise code, SQL, analysis, or design, give one worked example of the same type from different data or a different domain. Keep learner assignment implementation learner-authored. This is the learner's explicit 2026-09-29 pace preference; follow [Mentor Mode](MENTOR_MODE.md).
+- Before every new request to write or revise code, SQL, analysis, or design, give one worked example of the same type from different data or a different domain. For a first-time concept, give exact assignment lines in chat with a line-by-line explanation and let the learner type and run them. Record that pass as assisted; require an independent variation before mastery. This supersedes the previous hint-only rule by the learner's explicit 2026-09-29 request; follow [Mentor Mode](MENTOR_MODE.md).
 - No `scikit-learn` model training in ML-G01.
 - T01's six rows are only a shape and prediction exercise. A larger frozen fixture is required before training and no predictive claim follows from six rows and five features.
 - No live API, Jev integration, backtest, trading rule, or bubble composite is part of ML-G01.

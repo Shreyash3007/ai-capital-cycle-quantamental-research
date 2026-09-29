@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Complete the integrated T01 prediction-audit work block in `LEARNING_MANUAL.md`: reusable loop and vectorized functions, pre-calculation shape checks, named six-company output, original/changed/failure runs, and a short research defense. Review the packet together rather than gating each line. This changes the teaching pace, not the evidence-backed percentages. The saved baseline script currently runs correctly.
+Teach the first function line by line as shown in `LEARNING_MANUAL.md`. The learner has typed `def vector_pred(x, w, b):` but not its body, so the local script is temporarily incomplete. The mentor gives exact first-pass code and checks a run; this is assisted teaching. Then teach validation and the loop function, and require an independent changed case before awarding mastery credit. The larger T01 prediction-audit outcome and the evidence-backed percentages are unchanged.

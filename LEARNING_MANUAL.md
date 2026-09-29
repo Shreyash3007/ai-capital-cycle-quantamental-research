@@ -8,13 +8,13 @@ This is the one document to read and work from. It grows as you build the projec
 |---|---|
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
-| Active task | ML-G01-T01 capstone: turn the working prediction script into a checked, reusable research calculation |
+| Active task | ML-G01-T01: learn functions with an exact first pass, then finish the prediction audit |
 | Correct so far | One-feature hand predictions and shapes; full six-row agreement; changed-input run; incompatible-shape error observed and restored |
 | Still to demonstrate | Reusable functions, an explicit shape guard, a named result table, and one concise defense of the model's limits |
-| Code | Original six-row script runs again with five weights; four-weight failure was tested and repaired |
+| Code | The learner has started `def vector_pred(x, w, b):` at the end of the file; the function body is not written yet |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
-![T01 learning flow, showing completed experiments and the integrated capstone](Visuals/current_lesson_flow.png)
+![T01 learning flow, showing the function teaching pass before the integrated capstone](Visuals/current_lesson_flow.png)
 
 The picture is a rendered PNG, not a Mermaid code block. The table above gives the same state if an image viewer is unavailable.
 
@@ -136,6 +136,33 @@ Today's picture shows the task path, not model performance. When you reach gradi
 
 **What and why:** turn your working script into two reusable prediction functions with a shape check. The four-weight experiment showed why a run that prints numbers can still be wrong: the old loop silently ignored one feature. The output is a named prediction table plus original, changed-input, and invalid-shape runs that you can explain in a research review.
 
+### First teaching pass: a function
+
+A function gives a calculation a name. You put inputs in its parentheses; `return` sends the result back to the caller. Start with this different example:
+
+```python
+def double_with_fee(value, fee):
+    result = value * 2 + fee
+    return result
+
+print(double_with_fee(3, 1))  # 7
+```
+
+Line 1 defines a reusable calculation and names two inputs. Line 2 calculates from those inputs. Line 3 sends the result back. The last line calls the function with `3` and `1`, then prints `7`. The indented lines belong to the function; the unindented `print` runs after the definition.
+
+Your file already ends with `def vector_pred(x, w, b):`, but its body is empty. For this assisted first pass, type these exact lines to complete and call it:
+
+```python
+def vector_pred(x, w, b):
+    return np.dot(x, w) + b
+
+print(vector_pred(x, w, b))
+```
+
+Keep the existing `def` line; add the indented `return` below it, a blank line, then the unindented `print`. `x`, `w`, and `b` inside the function are inputs supplied by the call. `np.dot(x, w) + b` is the calculation you already ran outside a function. `return` hands its six-number array back to `print`. Run the file and check that the final printed array repeats the original six predictions. This step is assisted teaching, not independent mastery. After it works, the mentor teaches validation and the loop function in the same way, then gives a changed case to do independently.
+
+### Later in this work block
+
 Here is a worked example of the same *type* from delivery planning, not the finance assignment. Each route has two measurements, distance and delay; the function checks that each measurement has a matching penalty before calculating a score:
 
 ```python
@@ -155,7 +182,7 @@ for name, score in zip(["North", "South"], delivery_scores(routes, penalties)):
 # North 23; South 41
 ```
 
-Your larger assignment, to deliver together rather than one line at a time:
+Your larger assignment, after the first teaching passes:
 
 1. In your existing Python file, make separate learner-written loop and vectorized prediction functions accepting `x`, `w`, and `b`; each returns a one-dimensional prediction array. Add a feature/weight shape check before both calculations.
 2. Print company names beside the six predictions from the frozen table below. Show the shapes and `np.allclose` result. Check equal output shapes as well as close values.

@@ -92,7 +92,7 @@ The learner has already run the loop and `np.dot` forms on the six-row, five-fea
 3. Print a compact company-and-prediction result for the frozen six rows. Run the original fixture, a changed-input case, and a deliberately invalid weight shape; restore the working file after the failure.
 4. Submit one short explanation with the run output: why the old loop skipped a feature, what `np.allclose` establishes, what one output represents, and why supplied trial weights do not prove valuation accuracy.
 
-The mentor must show a small worked example from another domain before assigning this capstone. Review the complete packet once, with focused help only for specific blockers. The existing five acceptance checks below remain the evidence gates; a completed code block without explanation is still an attempted result.
+The mentor must show a small worked example from another domain before each new concept. The learner has said functions and validation are unfamiliar, so teach the first function line by line with exact code in chat, let them type and run it, then build toward the capstone. Label the first pass assisted and use a changed case for independent transfer. The existing five acceptance checks below remain the evidence gates; a completed code block without explanation is still an attempted result.
 
 ## Required prediction before run
 

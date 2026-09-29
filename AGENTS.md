@@ -15,9 +15,9 @@ This folder is the canonical home of the AI Capital Cycle Quantamental Research 
 
 ## Learning ownership
 
-- The learner writes, runs, explains, and defends every assignment-code line.
-- The mentor owns task design, guidance, execution checks, documentation, fixtures, and progress recording. Follow the help and solution boundary in `MENTOR_MODE.md`.
-- Apply the work-block rhythm in `MENTOR_MODE.md`: give one worked different-domain example before every new learner assignment, then a substantial learner-written task and a visible run. Break into tiny steps only to resolve an observed blocker; grow difficulty from observed understanding.
+- The learner types, runs, explains, and defends every assignment-code line. On first exposure, the mentor may give exact lines in chat as an assisted teaching pass; independent transfer is required before mastery credit.
+- The mentor owns task design, guidance, execution checks, documentation, fixtures, and progress recording. Follow the teaching and evidence boundary in `MENTOR_MODE.md`.
+- Apply the work-block rhythm in `MENTOR_MODE.md`: show one worked different-domain example before every new assignment, teach unfamiliar Python line by line, then return to a substantial learner-owned outcome and visible run. Grow independence from observed understanding.
 - Course coverage and demonstrated project capability are separate states. Use `PROGRESS.md` for task, phase, and overall completion.
 
 ## Research boundaries
