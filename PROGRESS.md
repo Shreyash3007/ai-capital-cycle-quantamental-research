@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The learner's general loop and vectorized prediction agree on the full six-row, five-feature table and after changing NexaCloud revenue growth from `0.40` to `0.50`. With four weights, the loop silently omitted a feature while `np.dot` raised a shape error. The learner restored the frozen data and five weights; the mentor reran the script successfully. Independent explanations remain open, so no complete T01 check has been credited yet.
+The learner's general loop and vectorized prediction agree on the full six-row, five-feature table and after changing NexaCloud revenue growth from `0.40` to `0.50`. The intentional four-weight failure was observed. The learner has now typed guarded `vector_pred` and `loop_pred` functions; both return the original six values. These functions were taught with exact first-pass code, so independent transfer and explanation remain open and no complete T01 check has been credited yet.
 
 The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Teach the first function line by line as shown in `LEARNING_MANUAL.md`. The learner has typed `def vector_pred(x, w, b):` but not its body, so the local script is temporarily incomplete. The mentor gives exact first-pass code and checks a run; this is assisted teaching. Then teach validation and the loop function, and require an independent changed case before awarding mastery credit. The larger T01 prediction-audit outcome and the evidence-backed percentages are unchanged.
+The guarded loop and vectorized functions now run after an assisted teaching pass. Finish T01 with one clean script path through those functions, named company predictions, and an independent changed-input or fresh-fixture transfer plus a short explanation of what the outputs and comparison can and cannot establish. Then move directly to T02 cost and residuals, followed by T03 gradient descent.

@@ -8,13 +8,13 @@ This is the one document to read and work from. It grows as you build the projec
 |---|---|
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
-| Active task | ML-G01-T01: learn functions with an exact first pass, then finish the prediction audit |
+| Active task | ML-G01-T01: both prediction functions now run; finish the prediction audit |
 | Correct so far | One-feature hand predictions and shapes; full six-row agreement; changed-input run; incompatible-shape error observed and restored |
 | Still to demonstrate | Reusable functions, an explicit shape guard, a named result table, and one concise defense of the model's limits |
-| Code | The learner has started `def vector_pred(x, w, b):` at the end of the file; the function body is not written yet |
+| Code | Assisted first-pass `vector_pred` and `loop_pred` functions both return the original six values; duplicate top-level calculations remain |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
-![T01 learning flow, showing the function teaching pass before the integrated capstone](Visuals/current_lesson_flow.png)
+![T01 learning flow, showing the working functions and remaining audit](Visuals/current_lesson_flow.png)
 
 The picture is a rendered PNG, not a Mermaid code block. The table above gives the same state if an image viewer is unavailable.
 
@@ -150,7 +150,7 @@ print(double_with_fee(3, 1))  # 7
 
 Line 1 defines a reusable calculation and names two inputs. Line 2 calculates from those inputs. Line 3 sends the result back. The last line calls the function with `3` and `1`, then prints `7`. The indented lines belong to the function; the unindented `print` runs after the definition.
 
-Your file already ends with `def vector_pred(x, w, b):`, but its body is empty. For this assisted first pass, type these exact lines to complete and call it:
+For the assisted first pass, you completed and called the function with these lines:
 
 ```python
 def vector_pred(x, w, b):
@@ -159,7 +159,26 @@ def vector_pred(x, w, b):
 print(vector_pred(x, w, b))
 ```
 
-Keep the existing `def` line; add the indented `return` below it, a blank line, then the unindented `print`. `x`, `w`, and `b` inside the function are inputs supplied by the call. `np.dot(x, w) + b` is the calculation you already ran outside a function. `return` hands its six-number array back to `print`. Run the file and check that the final printed array repeats the original six predictions. This step is assisted teaching, not independent mastery. After it works, the mentor teaches validation and the loop function in the same way, then gives a changed case to do independently.
+The indented `return` belongs to the function; the unindented `print` calls it. `x`, `w`, and `b` inside the function are inputs supplied by that call. `np.dot(x, w) + b` is the calculation you had already run outside a function. `return` hands its six-number array back to `print`. The run repeated the original six predictions. This was assisted teaching, not independent mastery.
+
+**Current result:** that teaching pass is done. You added a shape guard to `vector_pred`, tested its own error, and wrote `loop_pred` with the same guard. Both functions return the same six predictions. The earlier top-level loop and dot calculation still run too, so the script prints repeated outputs; later cleanup will keep one clear path through the functions.
+
+### Why this task exists
+
+This is the **prediction** part of linear regression, not training yet. Each company row contains five financial ratios. Each ratio pairs with one supplied weight; their products are summed and the bias is added once. A loop makes every step inspectable. `np.dot` performs the same row-wise calculation compactly. The function names let later cost and training code call the calculation with new inputs and weights instead of duplicating it. The guards stop a misleading run when the number of feature columns and weights differs.
+
+The numbers are a toy estimated log valuation multiple from synthetic data and trial parameters. Their agreement shows the two implementations match, not that the model fits real valuations or predicts market returns.
+
+### What comes next
+
+| Project task | What you will build | Why it follows |
+|---|---|---|
+| Finish T01 | Remove duplicate top-level calculations, show named company predictions, rerun original/changed/error cases, and explain limits | Leaves one clean, reusable prediction tool |
+| T02: cost and residuals | Compare predictions with synthetic observed targets, calculate errors and squared-error cost | Measures how far the model is from known values |
+| T03: gradients and gradient descent | Calculate how weights and bias should change, update them repeatedly, and plot cost over steps | Trains the model instead of using trial weights |
+| T04-T06 | Scaling, feature experiments, and a limited valuation-stretch research output | Tests whether the training and finance interpretation hold up |
+
+Your course coverage is C1W1 and C1W2, learner-reported. T01 applies C1W1 prediction and C1W2 multiple features/vectorization. T02 and T03 deliberately return to the C1W1 cost and gradient-descent ideas you already studied. C1W3 is not marked complete until you confirm it.
 
 ### Later in this work block
 

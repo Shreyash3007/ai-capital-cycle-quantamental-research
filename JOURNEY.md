@@ -25,6 +25,7 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-29 | [T01 shape-failure run](Journey/2026-09-28-ML-G01-T01.md): four weights against five feature columns made `np.dot` raise a dimension error; learner restored the script and mentor reran it. | Failure and recovery observed; learner diagnosis remains open. |
 | 2026-09-29 | Mentor cadence changed at the learner's request: larger integrated work blocks, one worked different-domain example before every new assignment, and one combined review of code, runs, and explanation. [T01 capstone](LEARNING_MANUAL.md) is now the next block. | Process change only; no new capability credit. |
 | 2026-09-29 | Learner clarified that new concepts need exact, line-by-line teaching before independent coding. Mentor Mode now records first-pass code as assisted and requires a later independent variation. The learner has started an incomplete `vector_pred` definition; the [manual](LEARNING_MANUAL.md) teaches its first body line. | Teaching preference updated; no new capability credit. |
+| 2026-09-29 | [T01 function teaching pass](Journey/2026-09-28-ML-G01-T01.md): learner typed guarded vectorized and loop functions; both return the original six predictions. The manual now explains why this task precedes cost and gradient descent. | Assisted function run observed; independent transfer pending. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 
