@@ -11,9 +11,9 @@ Early later-course concepts: none introduced yet
 Next course week: C1W3 not yet confirmed
 Active phase: P00 - C1W2 first-principles valuation engine
 Active goal: ML-G01
-Active task: ML-G01-T01 - Vectorized prediction
-Task state: IN PROGRESS
-Evidence state: EXECUTED, EXPLANATION PENDING
+Active teaching task: ML-G01-T02 - Cost and residuals
+Open earlier task: ML-G01-T01 - Vectorized prediction
+Evidence state: T01 ASSISTED RUN OBSERVED; T01 EXPLANATION AND TRANSFER PENDING; T02 NOT STARTED
 ```
 
 ## Progress summary
@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The learner's general loop and vectorized prediction agree on the full six-row, five-feature table and after changing NexaCloud revenue growth from `0.40` to `0.50`. The intentional four-weight failure was observed. The learner has now typed guarded `vector_pred` and `loop_pred` functions; both return the original six values. These functions were taught with exact first-pass code, so independent transfer and explanation remain open and no complete T01 check has been credited yet.
+The learner's guarded loop and vectorized prediction functions agree on all six named companies. The mentor reran the saved script and observed `Methods agree: True` with predictions `[2.687, 2.376, 2.955, 1.973, 2.004, 2.032]` (the first printed with ordinary floating-point rounding). A changed-input run and intentional four-weight failure were also observed. This was an assisted first pass; independent transfer and explanation remain open, so T01 earns no completed check yet. T02 teaching is open for pace; its learner file has no assignment code yet.
 
 The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
@@ -61,8 +61,8 @@ Overall completion is the sum of each phase weight multiplied by its evidence-ba
 
 | Task | Weight inside P00 | State | Completion | Evidence |
 |---|---:|---|---:|---|
-| ML-G01-T01 - Loop and vectorized prediction | 15% | in progress | 0% | [two-feature run; explanation pending](Journey/2026-09-28-ML-G01-T01.md) |
-| ML-G01-T02 - Cost function and residual meaning | 15% | planned | 0% | planned |
+| ML-G01-T01 - Loop and vectorized prediction | 15% | open transfer | 0% | [named run; explanation pending](Journey/2026-09-28-ML-G01-T01.md) |
+| ML-G01-T02 - Cost function and residual meaning | 15% | ready for teaching | 0% | [task brief](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T02%20-%20Cost%20and%20Residuals.md); no learner run |
 | ML-G01-T03 - Gradients and batch gradient descent | 20% | planned | 0% | planned |
 | ML-G01-T04 - Feature scaling and convergence | 15% | planned | 0% | planned |
 | ML-G01-T05 - Feature engineering and nonlinear terms | 15% | planned | 0% | planned |
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-The guarded loop and vectorized functions now run after an assisted teaching pass. Finish T01 with one clean script path through those functions, named company predictions, and an independent changed-input or fresh-fixture transfer plus a short explanation of what the outputs and comparison can and cannot establish. Then move directly to T02 cost and residuals, followed by T03 gradient descent.
+Begin T02 with the two frozen arrays, their shapes, and one hand-calculated error, squared error, and residual. Continue through cost, changed target, and a residual plot. Return to T01 for an independent transfer and short defense before closing it; neither task has earned mastery credit yet.

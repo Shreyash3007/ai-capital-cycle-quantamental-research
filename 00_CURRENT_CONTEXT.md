@@ -3,7 +3,7 @@ type: ml-current-context
 status: active
 updated: 2026-09-29
 active_goal: ML-G01
-active_task: ML-G01-T01
+active_task: ML-G01-T02
 ---
 
 # Current ML context
@@ -14,17 +14,17 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner work
 
 - Project: AI Capital Cycle Quantamental Research Engine.
 - Public repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research).
-- Publication state: earlier prediction runs and the teaching-first plan are on public `main`; the learner has locally completed guarded `vector_pred` and `loop_pred` functions, not yet committed while the script still contains duplicate top-level calculations and a trailing blank line.
+- Publication state: earlier prediction runs and the teaching-first plan are on public `main`; the learner's newer named-output T01 script remains local and uncommitted. This checkpoint records the T02 teaching setup separately from that learner code.
 - Mentor Mode: active; follow [MENTOR_MODE.md](MENTOR_MODE.md).
 - Phase: P00, C1W2 first-principles valuation engine.
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
-- Task: [ML-G01-T01 - Vectorized Prediction](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md).
-- Task state: in progress; hand predictions, shapes, full-table and changed-input runs, and an intentional shape failure are recorded in [the T01 session](Journey/2026-09-28-ML-G01-T01.md). The learner requested a faster, broader work-block rhythm.
+- Active teaching task: [ML-G01-T02 - Cost and Residuals](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T02%20-%20Cost%20and%20Residuals.md). The learner file is empty; no T02 run has been observed.
+- Earlier open task: [ML-G01-T01 - Vectorized Prediction](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md). The saved script produced six named predictions and `Methods agree: True`; independent explanation and transfer remain open. Details are in [the T01 session](Journey/2026-09-28-ML-G01-T01.md).
 - Learner lesson and next-action page: [LEARNING_MANUAL.md](LEARNING_MANUAL.md). Keep its current step and diagram aligned with this note and the progress ledger.
-- Progress: task 0%, phase 0%, overall 0% because execution is observed but no full explained acceptance check is closed; canonical ledger: [PROGRESS.md](PROGRESS.md).
-- Assistance debt: none.
+- Progress: T01 0%, T02 0%, phase 0%, overall 0% because no full explained acceptance check is closed; canonical ledger: [PROGRESS.md](PROGRESS.md).
+- Assistance debt: T01 functions and guard received exact first-pass teaching; an independent transfer is required before T01 closes.
 - Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
-- Next action: the learner asked why T01 exists and what comes next. Explain that T01 applies C1W1 prediction and C1W2 multiple features/vectorization to a reusable six-company toy model. The two guarded functions now run and agree. Next finish one clean path through the functions and named output, then T02 cost/residuals, then T03 gradients/gradient descent and a cost curve. Teach each unfamiliar code step with a different worked example and exact first-pass lines; require independent transfer before mastery credit. Do not silently rewrite the learner file.
+- Next action: teach the first T02 cost/residual step using an unrelated delivery-time example, then give exact initial array lines in chat for the learner to type into `02_cost_and_residuals.py`. Ask for the array shapes and one AstraCompute hand error, squared error, and signed residual before proceeding to the cost function. T03 gradients and a cost curve follow T02. Do not silently write assignment code.
 
 ## Current research target
 
@@ -77,4 +77,4 @@ The cross-phase [software engineering path](ENGINEERING_LEARNING_PATH.md) now in
 
 ## Evidence state
 
-The learner's general nested-loop code has executed on the full table, a changed input, and an intentional shape failure. The two guarded functions now return the same six values; these were taught with exact first-pass code and remain assisted evidence. Independent transfer and interpretation are open. After each task, record observed checks in `PROGRESS.md`, then refresh this note last.
+The learner's guarded loop and vectorized functions produced the same six named values in the saved script, including AstraCompute `2.6870000000000003` (ordinary floating-point rounding), and `Methods agree: True`. Changed-input and intentional shape-failure runs were also observed. This remains assisted T01 evidence with independent transfer and interpretation open. T02 has no learner implementation or execution yet. After each meaningful learner attempt, update the task and progress record, then refresh this note last.

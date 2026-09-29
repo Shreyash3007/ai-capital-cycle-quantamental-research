@@ -122,4 +122,4 @@ Start with the calibration and cold attempt. Follow [Mentor Mode](../../MENTOR_M
 
 ## Completion evidence
 
-Record the exact command, outputs, changed input, shape error, learner explanation, and assistance level. Passing T01 unlocks a detailed T02 cost-function brief.
+Record the exact command, outputs, changed input, shape error, learner explanation, and assistance level. T02 teaching may begin while T01's independent transfer and defense remain open; do not mark T01 complete until its checks pass.

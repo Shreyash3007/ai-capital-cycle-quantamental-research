@@ -26,13 +26,14 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-29 | Mentor cadence changed at the learner's request: larger integrated work blocks, one worked different-domain example before every new assignment, and one combined review of code, runs, and explanation. [T01 capstone](LEARNING_MANUAL.md) is now the next block. | Process change only; no new capability credit. |
 | 2026-09-29 | Learner clarified that new concepts need exact, line-by-line teaching before independent coding. Mentor Mode now records first-pass code as assisted and requires a later independent variation. The learner has started an incomplete `vector_pred` definition; the [manual](LEARNING_MANUAL.md) teaches its first body line. | Teaching preference updated; no new capability credit. |
 | 2026-09-29 | [T01 function teaching pass](Journey/2026-09-28-ML-G01-T01.md): learner typed guarded vectorized and loop functions; both return the original six predictions. The manual now explains why this task precedes cost and gradient descent. | Assisted function run observed; independent transfer pending. |
+| 2026-09-29 | [T01 named-output checkpoint](Journey/2026-09-28-ML-G01-T01.md): saved script reran with six company names and `Methods agree: True`; T02 cost and residuals opened for teaching. | Assisted T01 run; T02 has no learner run yet. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 
 ## Current learning state
 
-- [Progress ledger](PROGRESS.md): T01 0%, P00 0%, overall 0%.
-- [Current context](00_CURRENT_CONTEXT.md): T01 in progress.
+- [Progress ledger](PROGRESS.md): T01 0%, T02 0%, P00 0%, overall 0%.
+- [Current context](00_CURRENT_CONTEXT.md): T02 teaching active; T01 transfer still open.
 - [Learning manual](LEARNING_MANUAL.md): the current integrated lesson and next action.
 - [Knowledge graph](KNOWLEDGE_GRAPH.md): current concepts and planned extensions.
 - [Session records](Journey/README.md): hand-calculation, shape answers, and first Python run saved.

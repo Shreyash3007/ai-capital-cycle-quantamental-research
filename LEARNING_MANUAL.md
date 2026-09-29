@@ -8,15 +8,51 @@ This is the one document to read and work from. It grows as you build the projec
 |---|---|
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
-| Active task | ML-G01-T01: both prediction functions now run; finish the prediction audit |
-| Correct so far | One-feature hand predictions and shapes; full six-row agreement; changed-input run; incompatible-shape error observed and restored |
-| Still to demonstrate | Reusable functions, an explicit shape guard, a named result table, and one concise defense of the model's limits |
-| Code | Assisted first-pass `vector_pred` and `loop_pred` functions both return the original six values; duplicate top-level calculations remain |
-| Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
+| Active task | ML-G01-T02: cost and residuals; T01 independent transfer remains open |
+| Correct so far | T01 guarded loop and vectorized functions agree on all six named company predictions; changed-input and shape-failure runs observed |
+| Still to demonstrate | T01 independent explanation; T02 hand error, cost, signed residuals, changed-target run, and plot |
+| Code | T01 named-output script runs; T02 learner file is empty and ready for your code |
+| Evidence-backed progress | T01 0%, T02 0%, P00 0%, overall 0%; successful assisted runs are not independent mastery |
 
-![T01 learning flow, showing the working functions and remaining audit](Visuals/current_lesson_flow.png)
+![Current learning flow from prediction to cost and residuals](Visuals/current_lesson_flow.png)
 
 The picture is a rendered PNG, not a Mermaid code block. The table above gives the same state if an image viewer is unavailable.
+
+# Lesson 02: Measure the prediction errors
+
+## Why this follows prediction
+
+T01 answered "what does this trial model predict?" T02 asks "how far are those predictions from the observed values?" This returns to the C1W1 cost function you studied. The six targets below are invented teaching values, not live market prices. We will calculate a cost, keep each signed valuation gap, and make a residual plot. Gradient descent in T03 will then use cost to decide how to change the weights.
+
+## One worked example before your finance code
+
+A delivery model predicts 8 and 10 minutes; the actual times are 9 and 7 minutes. Define the prediction error as `predicted - actual`:
+
+| Delivery | Predicted | Actual | Error | Error squared | Residual: actual - predicted |
+|---|---:|---:|---:|---:|---:|
+| First | 8 | 9 | -1 | 1 | 1 |
+| Second | 10 | 7 | 3 | 9 | -3 |
+
+The C1W1 cost is the sum of squared errors divided by twice the number of rows: `J = (1 + 9) / (2 * 2) = 2.5`. Squaring makes both misses positive and gives a large miss more influence. The signed residual answers a different question: which side of the prediction was the actual value on? A positive valuation residual means observed valuation was above the model's estimate, not that the company is in a bubble.
+
+## Your frozen inputs
+
+| Company | Trial prediction | Synthetic observed log multiple |
+|---|---:|---:|
+| AstraCompute | 2.687 | 2.800 |
+| NexaCloud | 2.376 | 2.200 |
+| VertexChips | 2.955 | 3.100 |
+| ModelWorks | 1.973 | 1.900 |
+| DataForge | 2.004 | 2.100 |
+| CobaltAI | 2.032 | 2.400 |
+
+Use [02_cost_and_residuals.py](Projects/AI%20Capital%20Cycle%20Quantamental%20Research%20Engine/src/02_cost_and_residuals.py). It is empty so the assignment code remains yours. We supply predictions here to focus on cost before teaching imports between files. Both arrays should have shape `(6,)`, one value per company. Do not mistake these synthetic targets for measured market data.
+
+## Do this now
+
+First, enter the two arrays and print their shapes. Before running, calculate AstraCompute's error (`prediction - observed`), squared error, and signed residual (`observed - prediction`) by hand. Then run the file and compare. The mentor will teach every unfamiliar Python line using the delivery example first. Once this checkpoint runs, write the cost function, test a changed target and a mismatched length, then make and inspect a labeled residual plot. You do not need to reopen other documents to follow the lesson.
+
+T01's named output is a valid assisted run. Its explanation and independent transfer remain open, but they do not stop us from learning T02. Task credit follows demonstrated understanding, not how many scripts have been typed.
 
 ## How the whole journey grows
 

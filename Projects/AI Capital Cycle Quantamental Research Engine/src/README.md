@@ -11,4 +11,4 @@ This directory contains learner-authored numbered scripts.
 - Record substantial assistance in the task evidence.
 - Do not add API keys, tokens, or provider credentials.
 
-Current file: `01_vectorized_prediction.py` for ML-G01-T01.
+`01_vectorized_prediction.py` holds the assisted T01 prediction implementation. `02_cost_and_residuals.py` is the empty learner-owned file for T02; the mentor supplies teaching examples and fixture values, and the learner types its implementation.

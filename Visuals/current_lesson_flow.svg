@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
-  <title id="title">Current T01 learning flow</title>
-  <desc id="desc">Hand predictions, full-table agreement, changed input, shape failure, and guarded loop/vectorized functions were observed. The next step is a clean named-output audit, then cost and gradient descent.</desc>
+  <title id="title">Current learning flow: prediction to cost</title>
+  <desc id="desc">The assisted six-company prediction script runs. Cost and residual teaching begins next; independent T01 transfer remains open.</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
       <path d="M 0 0 L 12 6 L 0 12 z" fill="#8a96a3"/>
     </marker>
   </defs>
   <rect width="900" height="760" fill="#f7f9fb"/>
-  <text x="70" y="58" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#1f2d3a">T01: from idea to a checked program</text>
-  <text x="70" y="91" font-family="Arial, sans-serif" font-size="19" fill="#52606d">One complete work block at a time. You write the Python.</text>
+  <text x="70" y="58" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#1f2d3a">From predictions to measured error</text>
+  <text x="70" y="91" font-family="Arial, sans-serif" font-size="19" fill="#52606d">Assisted run observed. You write and run the next Python task.</text>
 
   <path d="M 450 190 L 450 213" stroke="#8a96a3" stroke-width="3" marker-end="url(#arrow)"/>
   <path d="M 450 290 L 450 313" stroke="#8a96a3" stroke-width="3" marker-end="url(#arrow)"/>
@@ -19,38 +19,38 @@
   <rect x="70" y="115" width="760" height="75" rx="6" fill="#e9f4ed" stroke="#82b394" stroke-width="2"/>
   <circle cx="108" cy="152" r="21" fill="#397958"/>
   <text x="108" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">1</text>
-  <text x="150" y="152" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Hand predictions: 1.4 and 1.8</text>
+  <text x="150" y="152" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">T01: six named predictions run</text>
   <text x="770" y="160" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#397958">DONE</text>
 
   <rect x="70" y="215" width="760" height="75" rx="6" fill="#e9f4ed" stroke="#82b394" stroke-width="2"/>
   <circle cx="108" cy="252" r="21" fill="#397958"/>
   <text x="108" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">2</text>
-  <text x="150" y="252" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Input matrix X: 2 rows, 1 feature</text>
+  <text x="150" y="252" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Loop and vectorized methods agree</text>
   <text x="770" y="260" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#397958">DONE</text>
 
   <rect x="70" y="315" width="760" height="75" rx="6" fill="#fff3dd" stroke="#d59b39" stroke-width="3"/>
   <circle cx="108" cy="352" r="21" fill="#a96b12"/>
   <text x="108" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">3</text>
-  <text x="150" y="352" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Two-feature loop runs: 1.76, 2.14</text>
-  <text x="770" y="360" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#a96b12">RUN</text>
+  <text x="150" y="352" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">T01: independent explanation</text>
+  <text x="770" y="360" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#a96b12">OPEN</text>
 
   <rect x="70" y="415" width="760" height="75" rx="6" fill="#fff" stroke="#c5cdd5" stroke-width="2"/>
   <circle cx="108" cy="452" r="21" fill="#6f7e8b"/>
   <text x="108" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">4</text>
-  <text x="150" y="452" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Vectorized result agrees: True</text>
-  <text x="770" y="460" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">RUN</text>
+  <text x="150" y="452" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">T02: compare with six target values</text>
+  <text x="770" y="460" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">NEXT</text>
 
   <rect x="70" y="515" width="760" height="75" rx="6" fill="#fff" stroke="#c5cdd5" stroke-width="2"/>
   <circle cx="108" cy="552" r="21" fill="#6f7e8b"/>
   <text x="108" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">5</text>
-  <text x="150" y="552" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Six five-feature rows agree</text>
-  <text x="770" y="560" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">RUN</text>
+  <text x="150" y="552" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Compute squared-error cost</text>
+  <text x="770" y="560" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">LATER</text>
 
   <rect x="70" y="615" width="760" height="75" rx="6" fill="#fff" stroke="#c5cdd5" stroke-width="2"/>
   <circle cx="108" cy="652" r="21" fill="#6f7e8b"/>
   <text x="108" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">6</text>
-  <text x="150" y="652" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Functions run; finish prediction audit</text>
-  <text x="770" y="660" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">NEXT</text>
+  <text x="150" y="652" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2d3a">Inspect signed residuals and plot</text>
+  <text x="770" y="660" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6f7e8b">LATER</text>
 
   <text x="70" y="732" font-family="Arial, sans-serif" font-size="17" fill="#52606d">Progress stays at 0% until a complete acceptance check is demonstrated.</text>
 </svg>
