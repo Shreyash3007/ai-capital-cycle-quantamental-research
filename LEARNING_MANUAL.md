@@ -9,9 +9,9 @@ This is the one document to read and work from. It grows as you build the projec
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
 | Active task | ML-G01-T01: loop and vectorized prediction, now with two features |
-| Correct so far | One-feature hand predictions and shapes; saved two-feature script uses a general nested loop and produces `[1.76 2.14]` from both methods |
+| Correct so far | One-feature hand predictions and shapes; two-feature nested-loop agreement; one five-feature row produces `[2.687]` from both methods |
 | Still to explain | What numerical agreement proves, why feature and weight counts must match, and why this is not yet a financial conclusion |
-| Code | Learner-written nested loop ran on 2026-09-29; `np.allclose` printed `True` |
+| Code | Learner-written nested loop ran on one five-feature row on 2026-09-29; `np.allclose` printed `True` |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
 ![T01 learning flow, showing observed two-feature execution and the next general-loop step](Visuals/current_lesson_flow.png)
@@ -111,7 +111,7 @@ These are building blocks, not a finished solution. You decide the variable name
 | 2 | Explain the input, weight, and output shapes. | Correct sizes and one sentence on matching dimensions | In progress; sizes correct, explanation pending |
 | 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | General nested loop observed on two-feature data; explanation pending |
 | 4 | Write the vectorized NumPy form. | Show that both versions agree | Observed on two-feature data; explain `allclose` |
-| 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Two-feature run done; five-feature case later |
+| 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Two-feature case and one five-feature row run; remaining rows later |
 | 6 | Change an input and intentionally create one bad shape. | Explain the changed output and the error | Later |
 
 The first complete shape-and-hand check earns the first T01 progress credit. Correct arithmetic and `X` alone are saved as partial evidence, not full credit. The mentor will update this page after each meaningful checkpoint.
@@ -134,7 +134,18 @@ Today's picture shows the task path, not model performance. When you reach gradi
 
 ## Next action
 
-Your nested loop now visits each company row and each feature column, and the two-feature rerun agrees with `np.dot`. Explain why the inner loop runs once per feature and why `b` is added only once per company. Next, use the frozen five-feature table in the task brief, predict one row by hand before running, and check that the same loop agrees with the vectorized result. `np.allclose(...)=True` will show implementation agreement, not financial accuracy.
+Your nested loop and `np.dot` both predicted `2.687` for AstraCompute's five-feature row. The mentor's hand check was `0.660 + 0.576 + 0.280 + 0.225 - 0.054 + 1.000 = 2.687`. Next, add the other five rows from this frozen synthetic table, keeping five values in every row:
+
+| Company | Revenue growth | Gross margin | Operating margin | FCF margin | R&D intensity |
+|---|---:|---:|---:|---:|---:|
+| AstraCompute | 0.55 | 0.72 | 0.28 | 0.25 | 0.18 |
+| NexaCloud | 0.40 | 0.68 | 0.22 | 0.20 | 0.16 |
+| VertexChips | 0.65 | 0.75 | 0.35 | 0.32 | 0.21 |
+| ModelWorks | 0.30 | 0.62 | 0.12 | 0.08 | 0.25 |
+| DataForge | 0.25 | 0.58 | 0.15 | 0.14 | 0.12 |
+| CobaltAI | 0.50 | 0.65 | 0.05 | -0.02 | 0.40 |
+
+Keep weights in the same column order: `[1.2, 0.8, 1.0, 0.9, -0.3]` and bias `1.0`. Before running, predict the output shape. Then compare loop and vectorized outputs. `np.allclose(...)=True` will show implementation agreement, not financial accuracy.
 
 ## How this manual is maintained
 

@@ -78,7 +78,7 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 | Two-row, one-feature shapes and hand predictions | open: dimension-matching explanation pending | [hand predictions and `X` shape](Journey/2026-09-23-ML-G01-T01.md); [remaining shapes](Journey/2026-09-24-ML-G01-T01.md) |
 | Learner-written loop on starter data | open: starter result shown in dialogue; explanation and durable run record pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
 | Vectorized prediction agrees on starter data | open: starter agreement shown in dialogue; comparison meaning pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
-| Two- and five-feature agreement plus changed input | open: generalized two-feature loop agrees; five-feature and changed-input runs pending | [verified nested-loop run](Journey/2026-09-28-ML-G01-T01.md) |
+| Two- and five-feature agreement plus changed input | open: two-feature case and one five-feature row agree; full fixture and changed-input runs pending | [verified runs](Journey/2026-09-28-ML-G01-T01.md) |
 | Shape failure and finance meaning explained | open | none |
 
 If T01 reaches 100%, P00 gains 15 percentage points and the overall project gains 1.5 percentage points (`10%` phase weight x `15%` task weight). Other tasks have their own weights and acceptance checks.
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Explain why the inner loop runs once per feature and why the bias is added once after it. Then extend the learner-written code to the five-feature fixture, predict one row by hand, and compare loop and vectorized outputs. Explain what `np.allclose` proves and what it cannot prove about the finance model.
+One five-feature row now runs and matches the mentor's hand check. Add the remaining five company rows with all five features per row, and compare loop and vectorized outputs. Then change one input, test a bad shape, and explain what `np.allclose` proves and what it cannot prove about the finance model.

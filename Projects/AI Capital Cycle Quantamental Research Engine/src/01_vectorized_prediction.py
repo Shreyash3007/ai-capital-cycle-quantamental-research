@@ -1,9 +1,8 @@
 import numpy as np
 
-x = np.array([[0.20, 0.72],
-             [0.40,0.68]])
+x = np.array([[0.55, 0.72,0.28,0.25,0.18]])
 
-w = np.array([2.0,0.5])
+w = np.array([1.2, 0.8, 1.0, 0.9, -0.3])
 b = 1.0
 
 print(x.shape)
