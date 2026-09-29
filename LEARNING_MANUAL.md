@@ -9,9 +9,9 @@ This is the one document to read and work from. It grows as you build the projec
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
 | Active task | ML-G01-T01: loop and vectorized prediction, now with two features |
-| Correct so far | One-feature hand predictions and shapes; saved two-feature script produces `[1.76 2.14]` from both methods |
+| Correct so far | One-feature hand predictions and shapes; saved two-feature script uses a general nested loop and produces `[1.76 2.14]` from both methods |
 | Still to explain | What numerical agreement proves, why feature and weight counts must match, and why this is not yet a financial conclusion |
-| Code | Learner-written script ran on 2026-09-28; `np.allclose` printed `True` |
+| Code | Learner-written nested loop ran on 2026-09-29; `np.allclose` printed `True` |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
 ![T01 learning flow, showing observed two-feature execution and the next general-loop step](Visuals/current_lesson_flow.png)
@@ -109,7 +109,7 @@ These are building blocks, not a finished solution. You decide the variable name
 |---|---|---|---|
 | 1 | Calculate the two outputs by hand. | `1.4` and `1.8` | Done |
 | 2 | Explain the input, weight, and output shapes. | Correct sizes and one sentence on matching dimensions | In progress; sizes correct, explanation pending |
-| 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | Observed on two-feature data; explanation and generalization pending |
+| 3 | Write a Python loop for the two rows. | Run it and compare with the hand values | General nested loop observed on two-feature data; explanation pending |
 | 4 | Write the vectorized NumPy form. | Show that both versions agree | Observed on two-feature data; explain `allclose` |
 | 5 | Add a second feature, then the five-feature fixture. | Explain new shapes and compare both versions | Two-feature run done; five-feature case later |
 | 6 | Change an input and intentionally create one bad shape. | Explain the changed output and the error | Later |
@@ -118,7 +118,7 @@ The first complete shape-and-hand check earns the first T01 progress credit. Cor
 
 ## 7. When you reach the editor
 
-Open `D:\ML-project\Projects\AI Capital Cycle Quantamental Research Engine\src\01_vectorized_prediction.py`. It contains your learner-written two-feature version. Keep that version working while you make the loop handle an arbitrary number of feature columns.
+Open `D:\ML-project\Projects\AI Capital Cycle Quantamental Research Engine\src\01_vectorized_prediction.py`. It contains your learner-written two-feature version with a nested loop that handles any number of matching feature columns and weights. Preserve this working baseline as you extend the fixture.
 
 From PowerShell, after you have written the code, the file can be run from any directory with:
 
@@ -134,7 +134,7 @@ Today's picture shows the task path, not model performance. When you reach gradi
 
 ## Next action
 
-Explain in your own words what `np.allclose(...)=True` establishes and what it cannot establish. Then generalize only your loop: for each company row `i`, start a subtotal, visit each feature column `j`, add the product of `x[i, j]` and `w[j]`, and add `b` once after the feature products. Rerun the current two-feature data. Both output arrays should remain `[1.76 2.14]` and the comparison should remain `True`. This prepares the same loop for five features without writing five separate terms.
+Your nested loop now visits each company row and each feature column, and the two-feature rerun agrees with `np.dot`. Explain why the inner loop runs once per feature and why `b` is added only once per company. Next, use the frozen five-feature table in the task brief, predict one row by hand before running, and check that the same loop agrees with the vectorized result. `np.allclose(...)=True` will show implementation agreement, not financial accuracy.
 
 ## How this manual is maintained
 

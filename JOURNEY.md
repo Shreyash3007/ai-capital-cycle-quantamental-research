@@ -18,6 +18,7 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-24 | [Cumulative learning manual](LEARNING_MANUAL.md) added with the full current lesson; its flow and the [knowledge graph](KNOWLEDGE_GRAPH.md) now use rendered PNGs instead of Mermaid code. | Documentation only; T01 evidence unchanged. |
 | 2026-09-24 | [T01 shape checkpoint](Journey/2026-09-24-ML-G01-T01.md): `w.shape == (1,)` and prediction shape `(2,)` answered correctly. | Correct shapes; explanation and Python run still open. |
 | 2026-09-28 | [T01 first saved Python run](Journey/2026-09-28-ML-G01-T01.md): learner-written loop and vectorized two-feature predictions both returned `[1.76 2.14]`; `np.allclose` returned `True`. | Code execution observed; explanation and transfer checks still open. |
+| 2026-09-29 | [T01 nested-loop continuation](Journey/2026-09-28-ML-G01-T01.md): learner generalized the loop over feature columns; saved script reran with matching two-feature outputs. | General loop execution observed; five-feature and explanation checks still open. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 

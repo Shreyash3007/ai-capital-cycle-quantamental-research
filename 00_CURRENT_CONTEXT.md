@@ -1,7 +1,7 @@
 ---
 type: ml-current-context
 status: active
-updated: 2026-09-28
+updated: 2026-09-29
 active_goal: ML-G01
 active_task: ML-G01-T01
 ---
@@ -14,7 +14,7 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner work
 
 - Project: AI Capital Cycle Quantamental Research Engine.
 - Public repository: [Shreyash3007/ai-capital-cycle-quantamental-research](https://github.com/Shreyash3007/ai-capital-cycle-quantamental-research).
-- Publication state: documentation baseline is on public `main`; the learner's current two-feature implementation has run locally and awaits the next reviewed push.
+- Publication state: the first two-feature implementation is on public `main`; the learner's generalized nested-loop change has run locally and awaits the next reviewed push.
 - Mentor Mode: active; follow [MENTOR_MODE.md](MENTOR_MODE.md).
 - Phase: P00, C1W2 first-principles valuation engine.
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
@@ -24,7 +24,7 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner work
 - Progress: task 0%, phase 0%, overall 0% because execution is observed but no full explained acceptance check is closed; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
 - Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
-- Next action: explain `np.allclose` as an approximate elementwise agreement check, not proof of financial validity. Ask the learner to explain that distinction in their own words, then generalize the loop over feature columns without hard-coded indexes and rerun the two-feature case. The current saved run shows `x.shape == (2, 2)`, `w.shape == (2,)`, both predictions `[1.76 2.14]`, and `True` from `np.allclose`.
+- Next action: the learner has written and run a nested loop over feature columns. The current saved run shows `x.shape == (2, 2)`, `w.shape == (2,)`, both predictions `[1.76 2.14]`, and `True` from `np.allclose`. Ask why the inner loop runs once per feature and why `b` is outside it, then move to the five-feature fixture with one hand prediction before running. Explain `np.allclose` as implementation agreement, not proof of financial validity.
 
 ## Current research target
 
@@ -76,4 +76,4 @@ The cross-phase [software engineering path](ENGINEERING_LEARNING_PATH.md) now in
 
 ## Evidence state
 
-The learner's two-feature prediction code has executed and matched the hand values, but the required explanations, general loop, five-feature transfer, changed input, and failure experiment remain open. The current run is implementation evidence, not a completed research capability. After each task, record observed checks in `PROGRESS.md`, then refresh this note last.
+The learner's general nested-loop two-feature prediction code has executed and matched the hand values, but the required explanations, five-feature transfer, changed input, and failure experiment remain open. The current run is implementation evidence, not a completed research capability. After each task, record observed checks in `PROGRESS.md`, then refresh this note last.

@@ -1,6 +1,6 @@
 # Project progress
 
-Updated: 2026-09-28
+Updated: 2026-09-29
 
 ## Current position
 
@@ -24,7 +24,7 @@ Phase P00        [--------------------]   0%
 Overall project  [--------------------]   0%
 ```
 
-The learner wrote a two-feature loop and vectorized prediction in the task file. On 2026-09-28 the script ran and printed `[1.76 2.14]` from both paths and `True` from `np.allclose`. The earlier one-feature runs were shown in dialogue, but the saved file now contains the two-feature version. Dimension matching, numerical-comparison meaning, and transfer to a general loop remain to be explained, so no complete T01 check has been credited yet.
+The learner wrote a two-feature loop and vectorized prediction in the task file. On 2026-09-29 the learner generalized the loop over feature columns; the saved script ran and printed `[1.76 2.14]` from both paths and `True` from `np.allclose`. The earlier one-feature runs were shown in dialogue, but the saved file now contains the two-feature version. Independent explanation and transfer to five features remain open, so no complete T01 check has been credited yet.
 
 The [software engineering path](ENGINEERING_LEARNING_PATH.md) is planned across these phases, from Python file structure through SQL, APIs, frontend work, and system design. It earns no separate completion credit from documentation; each phase will require observed engineering evidence at its own gate.
 
@@ -78,7 +78,7 @@ Each T01 check is worth 20% of the task. Evidence must include the learner's exp
 | Two-row, one-feature shapes and hand predictions | open: dimension-matching explanation pending | [hand predictions and `X` shape](Journey/2026-09-23-ML-G01-T01.md); [remaining shapes](Journey/2026-09-24-ML-G01-T01.md) |
 | Learner-written loop on starter data | open: starter result shown in dialogue; explanation and durable run record pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
 | Vectorized prediction agrees on starter data | open: starter agreement shown in dialogue; comparison meaning pending | [current two-feature code](Journey/2026-09-28-ML-G01-T01.md) |
-| Two- and five-feature agreement plus changed input | open: two-feature agreement observed; five-feature and changed-input runs pending | [verified two-feature run](Journey/2026-09-28-ML-G01-T01.md) |
+| Two- and five-feature agreement plus changed input | open: generalized two-feature loop agrees; five-feature and changed-input runs pending | [verified nested-loop run](Journey/2026-09-28-ML-G01-T01.md) |
 | Shape failure and finance meaning explained | open | none |
 
 If T01 reaches 100%, P00 gains 15 percentage points and the overall project gains 1.5 percentage points (`10%` phase weight x `15%` task weight). Other tasks have their own weights and acceptance checks.
@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Explain what `np.allclose` establishes and why it is not proof that the financial model is good. Generalize the learner-written loop to iterate over feature columns without hard-coded indexes, then rerun the two-feature check before moving to the five-feature fixture.
+Explain why the inner loop runs once per feature and why the bias is added once after it. Then extend the learner-written code to the five-feature fixture, predict one row by hand, and compare loop and vectorized outputs. Explain what `np.allclose` proves and what it cannot prove about the finance model.

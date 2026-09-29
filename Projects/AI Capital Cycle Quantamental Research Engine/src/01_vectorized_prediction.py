@@ -12,7 +12,11 @@ print(b)
 
 pred = []
 for i in range(len(x)):
-    pred.append(((w[0]*x[i,0]) + w[1]*x[i,1])+b)
+    subtotal = 0
+    for j in range(len(w)):
+        subtotal += x[i,j]*w[j]
+    subtotal +=b
+    pred.append(subtotal)
 
 pred = np.array(pred)
 
