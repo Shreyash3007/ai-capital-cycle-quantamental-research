@@ -8,13 +8,13 @@ This is the one document to read and work from. It grows as you build the projec
 |---|---|
 | Course study | Machine Learning Specialization C1W1 and C1W2 completed, learner-reported; C1W3 not confirmed |
 | Project | P00, first-principles valuation-stretch foundation |
-| Active task | ML-G01-T01: loop and vectorized prediction, now with two features |
+| Active task | ML-G01-T01 capstone: turn the working prediction script into a checked, reusable research calculation |
 | Correct so far | One-feature hand predictions and shapes; full six-row agreement; changed-input run; incompatible-shape error observed and restored |
-| Still to explain | What numerical agreement proves, why feature and weight counts must match, and why this is not yet a financial conclusion |
+| Still to demonstrate | Reusable functions, an explicit shape guard, a named result table, and one concise defense of the model's limits |
 | Code | Original six-row script runs again with five weights; four-weight failure was tested and repaired |
 | Evidence-backed progress | Task 0%, P00 0%, overall 0%; execution observed, required explanations and transfer still open |
 
-![T01 learning flow, showing the observed shape error and pending explanation](Visuals/current_lesson_flow.png)
+![T01 learning flow, showing completed experiments and the integrated capstone](Visuals/current_lesson_flow.png)
 
 The picture is a rendered PNG, not a Mermaid code block. The table above gives the same state if an image viewer is unavailable.
 
@@ -132,9 +132,37 @@ Before each first run, say what you expect to see. After the run, compare the ac
 
 Today's picture shows the task path, not model performance. When you reach gradient descent, you will plot cost against training steps to see whether learning is converging. Later you will plot actual against predicted values and the residuals, which are the differences between them. Each plot must come from your executed code and have an explanation of what it does and does not show.
 
-## Next action
+## Current work block: prediction audit
 
-Your saved script now runs on this full frozen synthetic table, with five features in every row:
+**What and why:** turn your working script into two reusable prediction functions with a shape check. The four-weight experiment showed why a run that prints numbers can still be wrong: the old loop silently ignored one feature. The output is a named prediction table plus original, changed-input, and invalid-shape runs that you can explain in a research review.
+
+Here is a worked example of the same *type* from delivery planning, not the finance assignment. Each route has two measurements, distance and delay; the function checks that each measurement has a matching penalty before calculating a score:
+
+```python
+import numpy as np
+
+def delivery_scores(routes, penalties):
+    if routes.ndim != 2 or penalties.ndim != 1:
+        raise ValueError("Expected a route table and a weight list")
+    if routes.shape[1] != penalties.shape[0]:
+        raise ValueError("One penalty is required per route measurement")
+    return np.dot(routes, penalties)
+
+routes = np.array([[2, 3], [4, 1]])
+penalties = np.array([10, 1])
+for name, score in zip(["North", "South"], delivery_scores(routes, penalties)):
+    print(name, score)
+# North 23; South 41
+```
+
+Your larger assignment, to deliver together rather than one line at a time:
+
+1. In your existing Python file, make separate learner-written loop and vectorized prediction functions accepting `x`, `w`, and `b`; each returns a one-dimensional prediction array. Add a feature/weight shape check before both calculations.
+2. Print company names beside the six predictions from the frozen table below. Show the shapes and `np.allclose` result. Check equal output shapes as well as close values.
+3. Run the frozen table, one changed input, and one four-weight failure. Restore the frozen data and five weights afterward. Send the three outputs or error together.
+4. Write four short sentences: why the old loop omitted a feature, what `np.allclose` proves, what one prediction represents, and why these supplied weights cannot establish real valuation accuracy.
+
+Use this full frozen synthetic table for your original run:
 
 | Company | Revenue growth | Gross margin | Operating margin | FCF margin | R&D intensity |
 |---|---:|---:|---:|---:|---:|
@@ -145,13 +173,7 @@ Your saved script now runs on this full frozen synthetic table, with five featur
 | DataForge | 0.25 | 0.58 | 0.15 | 0.14 | 0.12 |
 | CobaltAI | 0.50 | 0.65 | 0.05 | -0.02 | 0.40 |
 
-The weights are in the same column order: `[1.2, 0.8, 1.0, 0.9, -0.3]`, with bias `1.0`. Both paths produced six values and `np.allclose(...)=True`. That shows implementation agreement on this table, not financial accuracy.
-
-The frozen baseline printed `[2.687 2.376 2.955 1.973 2.004 2.032]`. After you changed only NexaCloud revenue growth from `0.40` to `0.50`, both methods printed `[2.687 2.496 2.955 1.973 2.004 2.032]` and `True`. Only NexaCloud moved, by `0.120`. The mentor supplied `(0.50 - 0.40) * 1.2 = 0.120`; explain this in your own words before claiming the check as independent.
-
-You then tried four weights against five feature columns. The loop printed six numbers because its inner loop ran only `len(w)` times and skipped column five. `np.dot` raised `ValueError` because its inner dimensions were `5` and `4`. Your saved script now has the fifth weight and frozen NexaCloud `0.40` restored; both methods again produce the original six values and `True`.
-
-Next explain in your own words why the loop continued but `np.dot` stopped. Also state what one prediction represents in this toy model and why two matching calculations do not prove a financially accurate model.
+The weights are in the same column order: `[1.2, 0.8, 1.0, 0.9, -0.3]`, with bias `1.0`. The original run produced `[2.687 2.376 2.955 1.973 2.004 2.032]`; the changed NexaCloud row produced `[2.687 2.496 2.955 1.973 2.004 2.032]`. These are supplied trial weights on synthetic companies, not a validated valuation model.
 
 ## How this manual is maintained
 

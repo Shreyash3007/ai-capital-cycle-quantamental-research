@@ -83,6 +83,17 @@ Write the implementation yourself, one checkpoint at a time. Start with the two-
 
 Choose names that express finance meaning. Avoid shadowing Python built-ins such as `sum` and `list`.
 
+## Current integrated capstone
+
+The learner has already run the loop and `np.dot` forms on the six-row, five-feature fixture, changed one input, and observed an incompatible-weight error. Finish T01 in one larger work block rather than another sequence of one-line prompts:
+
+1. Turn both prediction methods into learner-written functions that accept `X`, `w`, and `b` and return a one-dimensional array of predictions.
+2. Add a shape check before either calculation so both methods reject a feature/weight mismatch with a clear error. The earlier loop silently skipped a feature when `w` was too short.
+3. Print a compact company-and-prediction result for the frozen six rows. Run the original fixture, a changed-input case, and a deliberately invalid weight shape; restore the working file after the failure.
+4. Submit one short explanation with the run output: why the old loop skipped a feature, what `np.allclose` establishes, what one output represents, and why supplied trial weights do not prove valuation accuracy.
+
+The mentor must show a small worked example from another domain before assigning this capstone. Review the complete packet once, with focused help only for specific blockers. The existing five acceptance checks below remain the evidence gates; a completed code block without explanation is still an attempted result.
+
 ## Required prediction before run
 
 Before each new checkpoint's first run, write down:

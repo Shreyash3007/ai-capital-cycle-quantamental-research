@@ -19,12 +19,12 @@ This is the compact mentor resumption note for `D:\ML-project`. The learner work
 - Phase: P00, C1W2 first-principles valuation engine.
 - Goal: [ML-G01 - C1W2 Valuation Stretch Foundation](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/GOAL.md).
 - Task: [ML-G01-T01 - Vectorized Prediction](Goals/ML-G01%20-%20C1W2%20Valuation%20Stretch%20Foundation/T01%20-%20Vectorized%20Prediction.md).
-- Task state: in progress; [hand predictions and `X` shape](Journey/2026-09-23-ML-G01-T01.md), [`w` and output shapes](Journey/2026-09-24-ML-G01-T01.md), and the [first saved Python run](Journey/2026-09-28-ML-G01-T01.md) recorded.
+- Task state: in progress; hand predictions, shapes, full-table and changed-input runs, and an intentional shape failure are recorded in [the T01 session](Journey/2026-09-28-ML-G01-T01.md). The learner requested a faster, broader work-block rhythm.
 - Learner lesson and next-action page: [LEARNING_MANUAL.md](LEARNING_MANUAL.md). Keep its current step and diagram aligned with this note and the progress ledger.
 - Progress: task 0%, phase 0%, overall 0% because execution is observed but no full explained acceptance check is closed; canonical ledger: [PROGRESS.md](PROGRESS.md).
 - Assistance debt: none.
 - Course coverage: Machine Learning Specialization C1W1 and C1W2 completed, learner-reported. C1W3 has not been confirmed. P00 uses C1W1 prediction, cost, and gradient descent as well as C1W2 methods. Later methods may be introduced early with a first-principles explanation, a bounded task, and a learner understanding check; this does not mark a course week or project capability complete.
-- Next action: the learner supplied a four-weight run against five feature columns. The loop printed six incomplete predictions, then `np.dot` raised `ValueError` for shapes `(6,5)` and `(4,)`. The saved file already has NexaCloud `0.40` and all five weights restored; the mentor reran it successfully. Ask the learner why the loop continued while `np.dot` stopped, what one prediction represents, and why agreement does not prove financial accuracy.
+- Next action: assign the integrated T01 prediction-audit capstone in `LEARNING_MANUAL.md`. A worked delivery-scoring example is already there. The learner writes reusable loop/vectorized functions, shape checks, named output, and original/changed/failure runs, then gives one short research defense. Review the packet together instead of asking another sequence of single-line questions. The saved baseline script is restored and runs. After T01, move promptly to cost and gradient descent in larger work blocks.
 
 ## Current research target
 
@@ -57,6 +57,7 @@ The cross-phase [software engineering path](ENGINEERING_LEARNING_PATH.md) now in
 
 ## Important boundaries
 
+- Before every new request to write or revise code, SQL, analysis, or design, give one worked example of the same type from different data or a different domain. Keep learner assignment implementation learner-authored. This is the learner's explicit 2026-09-29 pace preference; follow [Mentor Mode](MENTOR_MODE.md).
 - No `scikit-learn` model training in ML-G01.
 - T01's six rows are only a shape and prediction exercise. A larger frozen fixture is required before training and no predictive claim follows from six rows and five features.
 - No live API, Jev integration, backtest, trading rule, or bubble composite is part of ML-G01.

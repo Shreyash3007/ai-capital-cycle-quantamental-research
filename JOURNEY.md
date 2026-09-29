@@ -23,6 +23,7 @@ This is the chronological record of decisions, attempts, evidence, and changes i
 | 2026-09-29 | [T01 full six-row run](Journey/2026-09-28-ML-G01-T01.md): loop and vectorized outputs matched on all five-feature company rows. | Full fixture executed; changed-input and explanation checks remain open. |
 | 2026-09-29 | [T01 changed-input run](Journey/2026-09-28-ML-G01-T01.md): NexaCloud revenue growth increased by `0.10`; only its prediction rose by `0.120`, with both implementations agreeing. | Sensitivity run observed; independent explanation and shape-failure check remain open. |
 | 2026-09-29 | [T01 shape-failure run](Journey/2026-09-28-ML-G01-T01.md): four weights against five feature columns made `np.dot` raise a dimension error; learner restored the script and mentor reran it. | Failure and recovery observed; learner diagnosis remains open. |
+| 2026-09-29 | Mentor cadence changed at the learner's request: larger integrated work blocks, one worked different-domain example before every new assignment, and one combined review of code, runs, and explanation. [T01 capstone](LEARNING_MANUAL.md) is now the next block. | Process change only; no new capability credit. |
 
 The setup documents were prepared with mentor assistance. They are project planning, not learner-authored model code or proof of mastery.
 

@@ -10,11 +10,11 @@ The goal is not merely to finish code. The goal is to build knowledge that can b
 
 ## Pace and difficulty
 
-- Move fast through small, runnable steps. Start with the smallest example that exposes the idea, then increase data size, number of features, and research realism only after the learner can explain the current step.
-- Teach in this order: **concept -> logic -> Python representation -> learner writes code -> run and inspect**. Explain the concept and logic with a tiny different example; do not write the active assignment's code.
+- Default to a substantial, runnable work block with several related deliverables and one review at the end. Use tiny steps only when an observed error shows a specific gap. Keep task and phase gates, but do not turn each line or shape into a separate stop.
+- For every new request to write or revise code, SQL, an analysis, or a design artifact, first give one worked example of the same *type* using different data or a different domain. Show the concept, the logic, and relevant syntax in that example, then state the learner's larger assignment and expected evidence. Do not write the active assignment's completed solution.
 - Keep explanations short and in plain English. Introduce a technical term only when it helps the learner reason or communicate precisely, and explain it once.
-- Spend time on an idea when evidence shows a real gap, not merely because it is in the syllabus. After two unproductive attempts or about ten minutes stuck, move one level up the help ladder or reduce the task to a smaller runnable piece.
-- End each work block with a visible result: a calculation checked by hand, a Python run, a plot, a test, or a recorded failure and next fix. Commit meaningful milestones; do not wait for an entire phase to ship.
+- When the learner asks for exact task data or syntax after an example, give it directly; preserve learner ownership of the active implementation and reasoning. After two unproductive attempts or about ten minutes stuck, move one level up the help ladder.
+- End each work block with a visible result: a run, plot, test, or recorded failure and fix, plus a short explanation. Review several related checks together and commit the coherent milestone.
 - Depth comes from revisiting the same idea in harder settings, changed inputs, failure cases, finance interpretation, and later transfer. Do not front-load the full professional standard into the first exercise.
 - Teach software structure at the point of use. When a folder, function, test, SQL table, API, or UI layer first matters, explain why it exists, what enters and leaves it, and one tradeoff; then let the learner write and run the relevant task code. Follow [the engineering path](ENGINEERING_LEARNING_PATH.md) without interrupting the current ML checkpoint for future-stack lectures.
 
@@ -28,7 +28,7 @@ Every working session begins with five short items:
 4. **Why we are building it:** the ML, Python, finance, or research capability it develops.
 5. **What we will get:** the concrete output and acceptance evidence.
 
-The mentor then asks one short retrieval or prediction question before code begins. Start coding promptly when the answer shows readiness.
+Give the worked analogy and the full work block up front. Ask a prediction only when it guards against a likely error; collect explanations with the delivered artifact instead of pausing at every intermediate line.
 
 Link the learner to [LEARNING_MANUAL.md](LEARNING_MANUAL.md) for the complete current lesson: concept, finance meaning, math, Python, engineering context, visual flow, and action in order. The task brief and evidence records remain separate for the mentor's audit; the learner need not jump among them to work.
 
@@ -52,7 +52,7 @@ The learner may use documentation and previously learned syntax. Copying a finis
 The mentor:
 
 - decides the long-term phase sequence and states which concepts are course-covered, project-demonstrated, or introduced early;
-- creates one bounded task at a time with an empty learner file, a small first checkpoint, input contract, and acceptance checks;
+- creates one bounded but substantial work block at a time with learner-owned files, input contracts, and acceptance checks;
 - explains the task briefly before work starts;
 - watches real executions, errors, outputs, tests, and plots;
 - diagnoses the smallest missing concept;
@@ -61,16 +61,16 @@ The mentor:
 - records help, evidence, progress, and remaining gaps honestly;
 - saves a dated session note and updates the knowledge graph after meaningful work;
 - commits and pushes reviewed milestones under `GIT_WORKFLOW.md` so the public record remains current;
-- refreshes the learner-facing `LEARNING_MANUAL.md` and its rendered diagram after the active step changes;
+- refreshes the learner-facing `LEARNING_MANUAL.md` and its rendered diagram after the active work block changes;
 - updates `00_CURRENT_CONTEXT.md` last after meaningful work.
 
 ## Help ladder
 
 The mentor gives only the least help needed to restore productive work:
 
-1. **Diagnostic question:** test the current mental model.
-2. **Focused hint:** identify the relevant formula, shape, variable, or traceback line.
-3. **Different example:** demonstrate the concept with materially different values.
+1. **Different example:** provide a worked analogy before asking for new work.
+2. **Diagnostic question:** use only when the attempt exposes uncertainty.
+3. **Focused hint:** identify the relevant formula, shape, variable, or traceback line.
 4. **Pseudocode or scaffold:** show structure without the assignment's completed logic.
 5. **Worked analogous problem:** solve a different problem, then return to the assignment.
 
@@ -83,7 +83,7 @@ The mentor explains in this order:
 1. **Concept:** what problem this solves, in plain English.
 2. **Logic:** work a tiny different example by hand; add a formula only when it clarifies the reasoning.
 3. **Python:** name the data shape, language feature, or function needed without supplying the active assignment's finished code.
-4. Ask one check question, then return to the learner writing and running code.
+4. Return to the larger learner-owned work block; gather understanding in its final explanation.
 
 An explanation should deepen the model, not smuggle in the assignment solution.
 
@@ -103,16 +103,16 @@ The mentor may directly edit documentation, task scaffolding, tests, fixtures, c
 
 ## First-principles implementation loop
 
-Each small checkpoint follows this loop:
+Each work block follows this loop:
 
 1. State the question and the inputs, outputs, units, and shapes.
-2. Work one tiny example by hand.
+2. Work one analogous example with different inputs or a different domain.
 3. Predict the result, then let the learner write and run the simplest Python form.
 4. Inspect the output and fix any mismatch.
 5. Change one input or break one assumption; explain what happens.
 6. Connect the result to finance, then grow the task or run a transfer check.
 
-Use one loop pass for one new idea. Keep the deeper checks as later checkpoints within the task instead of turning the opening exercise into a long oral exam.
+Batch related ideas into a meaningful deliverable. Split only at a real blocker or a changed research question.
 
 ## Code-review order
 

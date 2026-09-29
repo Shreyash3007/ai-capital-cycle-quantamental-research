@@ -96,4 +96,4 @@ If T01 reaches 100%, P00 gains 15 percentage points and the overall project gain
 
 ## Next milestone
 
-Explain why the four-weight loop printed six incomplete predictions while `np.dot` rejected the `(6, 5)` by `(4,)` multiplication. Then explain what one output represents and why `np.allclose` agreement is not proof of financial accuracy. The saved script is restored and runs correctly.
+Complete the integrated T01 prediction-audit work block in `LEARNING_MANUAL.md`: reusable loop and vectorized functions, pre-calculation shape checks, named six-company output, original/changed/failure runs, and a short research defense. Review the packet together rather than gating each line. This changes the teaching pace, not the evidence-backed percentages. The saved baseline script currently runs correctly.

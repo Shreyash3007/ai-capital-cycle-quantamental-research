@@ -16,9 +16,9 @@ Build a complete multiple-linear-regression research kernel by hand and use it t
 
 The phase does not claim that the model predicts returns or proves a bubble.
 
-## Difficulty ladder
+## Delivery rhythm
 
-Every task begins with one small hand calculation and a runnable Python step. The learner first explains what the values mean, then the logic, then writes the code. Each next checkpoint changes one thing at a time: more rows, more features, a new operation, or a stronger research check. The mentor keeps the pace brisk, gives a focused hint after repeated stalls, and records partial work without calling it mastery. See [Mentor Mode](MENTOR_MODE.md) for the pacing rule.
+Give each assignment as one larger runnable work block with a worked example from another domain. The learner writes the implementation, runs original/changed/failure cases, and explains the result in one review packet. Small checkpoints are used only to unblock a specific error. The task IDs and acceptance gates below still track evidence separately, but they do not require a separate chat turn for every line or shape. See [Mentor Mode](MENTOR_MODE.md) for the pacing rule.
 
 P00 also introduces the software structure in [the engineering path](ENGINEERING_LEARNING_PATH.md): what belongs in `src`, `data`, `outputs`, and `tests`, how a script runs, and when a function or module is worth extracting. This is taught alongside the learner's actual code, not as a separate setup project. SQL and web services wait for later phases.
 
@@ -95,4 +95,4 @@ P00 uses learner-reported completion of C1W1 and C1W2. It starts with prediction
 
 ## Phase progress
 
-See [PROGRESS.md](PROGRESS.md). Current phase completion is **0%** because the active task is ready but has not been attempted.
+See [PROGRESS.md](PROGRESS.md). Current phase completion is **0%** because T01 has been attempted and executed but its explained acceptance checks remain open.
